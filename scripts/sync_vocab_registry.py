@@ -38,11 +38,13 @@ def extract_keys_from_file(path: Path) -> list[str]:
     keys: list[str] = []
 
     for node in ast.walk(tree):
-        if (isinstance(node, ast.Call)
-                and isinstance(node.func, ast.Name)
-                and node.func.id == "vocab_from_registry"
-                and node.args
-                and isinstance(node.args[0], ast.List)):
+        if (
+            isinstance(node, ast.Call)
+            and isinstance(node.func, ast.Name)
+            and node.func.id == "vocab_from_registry"
+            and node.args
+            and isinstance(node.args[0], ast.List)
+        ):
             for elt in node.args[0].elts:
                 if isinstance(elt, ast.Constant) and isinstance(elt.value, str):
                     keys.append(elt.value)
