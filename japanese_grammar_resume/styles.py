@@ -93,7 +93,9 @@ def kanji_cell(pairs):
 
     top_row, bot_row, col_w = [], [], []
     for furi, ch in pairs:
-        cw = max(len(furi) * 3.8*mm, 4.5*mm)
+        furi_w = pdfmetrics.stringWidth(furi, 'JP', FURI_SZ) if furi else 0
+        char_w = pdfmetrics.stringWidth(ch, 'JP', CHAR_SZ)
+        cw = max(furi_w, char_w)
         col_w.append(cw)
         top_row.append(Paragraph(jp(furi),
             S(f'ft{abs(hash(furi+ch))}', fontName='JP', fontSize=FURI_SZ,
@@ -109,8 +111,8 @@ def kanji_cell(pairs):
                      ('VALIGN',        (0,0), (-1,-1), 'BOTTOM'),
                      ('TOPPADDING',    (0,0), (-1,-1), 0),
                      ('BOTTOMPADDING', (0,0), (-1,-1), 0),
-                     ('LEFTPADDING',   (0,0), (-1,-1), 1.5),
-                     ('RIGHTPADDING',  (0,0), (-1,-1), 1.5),
+                     ('LEFTPADDING',   (0,0), (-1,-1), 0),
+                     ('RIGHTPADDING',  (0,0), (-1,-1), 0),
                  ]))
 
 def vocab_two_col(vocab_list):
