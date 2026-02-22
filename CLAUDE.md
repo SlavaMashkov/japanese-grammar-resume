@@ -15,22 +15,24 @@ scripts/
   sync_vocab_registry.py           — vocab_registry.json validation (checks keys from chapters)
 japanese_grammar_resume/           — Python package
   __init__.py
-  __main__.py                      — entry point: imports chapters, builds PDF
+  __main__.py                      — entry point: auto-discovers chapters, builds PDF
   styles.py                        — fonts, colors, styles, helpers (jp, cell, section_header, kanji_cell, vocab_two_col, vocab_from_registry, TABLE_STYLE)
   vocab_registry.json              — registry of unique words by chapter
-  chapters/                        — one file per chapter, each exports build() → list
+  chapters/                        — one subdir per part, auto-discovered
     __init__.py
-    ch03_02_state_of_being.py
-    ch03_03_particles.py
-    ch03_04_adjectives.py
-    ch03_05_verb_basics.py
-    ch03_06_negative_verbs.py
-    ch03_07_past_tense.py
-    ch03_08_verb_particles.py
-    ch03_09_transitive.py
-    ch03_10_relative_clauses.py
-    ch03_11_noun_particles.py
-    ch03_12_adverbs.py
+    ch03/                          — Part 3: Basic Grammar
+      __init__.py
+      ch03_02_state_of_being.py
+      ch03_03_particles.py
+      ch03_04_adjectives.py
+      ch03_05_verb_basics.py
+      ch03_06_negative_verbs.py
+      ch03_07_past_tense.py
+      ch03_08_verb_particles.py
+      ch03_09_transitive.py
+      ch03_10_relative_clauses.py
+      ch03_11_noun_particles.py
+      ch03_12_adverbs.py
 ```
 
 ## Running
@@ -73,10 +75,10 @@ The `jp()` function auto-detects CJK characters and switches the font accordingl
 
 ## Adding a New Chapter
 
-1. Create `japanese_grammar_resume/chapters/ch03_XX_name.py` with a `build()` function returning a `list` of story elements.
-2. Import `from ..styles import *` — all helpers and styles are available.
+1. Create `japanese_grammar_resume/chapters/chXX/chXX_YY_name.py` with a `build()` function returning a `list` of story elements. If the part subdirectory doesn't exist yet, create it with an empty `__init__.py`.
+2. Import `from ...styles import *` — all helpers and styles are available.
 3. The first chapter (3.2) does not start with `PageBreak()`; all others do.
-4. Add the import and `build()` call in `japanese_grammar_resume/__main__.py`.
+4. Chapters are auto-discovered — no manual imports needed in `__main__.py`.
 
 ## Vocab Registry
 

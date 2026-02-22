@@ -1,19 +1,23 @@
 import argparse
+import importlib
+import re
+from pathlib import Path
 
-from .chapters import (
-    ch03_02_state_of_being,
-    ch03_03_particles,
-    ch03_04_adjectives,
-    ch03_05_verb_basics,
-    ch03_06_negative_verbs,
-    ch03_07_past_tense,
-    ch03_08_verb_particles,
-    ch03_09_transitive,
-    ch03_10_relative_clauses,
-    ch03_11_noun_particles,
-    ch03_12_adverbs,
-)
 from .styles import *
+
+CHAPTERS_DIR = Path(__file__).resolve().parent / "chapters"
+
+
+def _discover_chapters() -> list:
+    """Import all ch*/*.py modules under chapters/ and call build() in sorted order."""
+    modules = []
+    for part_dir in sorted(CHAPTERS_DIR.iterdir()):
+        if not part_dir.is_dir() or not re.match(r"ch\d+", part_dir.name):
+            continue
+        for py_file in sorted(part_dir.glob("ch*.py")):
+            module_name = f".chapters.{part_dir.name}.{py_file.stem}"
+            modules.append(importlib.import_module(module_name, package="japanese_grammar_resume"))
+    return modules
 
 
 def main():
@@ -41,17 +45,8 @@ def main():
     )
 
     story = []
-    story += ch03_02_state_of_being.build()
-    story += ch03_03_particles.build()
-    story += ch03_04_adjectives.build()
-    story += ch03_05_verb_basics.build()
-    story += ch03_06_negative_verbs.build()
-    story += ch03_07_past_tense.build()
-    story += ch03_08_verb_particles.build()
-    story += ch03_09_transitive.build()
-    story += ch03_10_relative_clauses.build()
-    story += ch03_11_noun_particles.build()
-    story += ch03_12_adverbs.build()
+    for module in _discover_chapters():
+        story += module.build()
 
     doc.build(story)
     print("Done:", output_path)

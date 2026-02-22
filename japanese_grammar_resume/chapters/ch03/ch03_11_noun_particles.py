@@ -1,4 +1,4 @@
-from ..styles import *
+from ...styles import *
 
 
 def build():

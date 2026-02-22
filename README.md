@@ -59,14 +59,15 @@ To run manually:
 
 ```txt
 japanese_grammar_resume/        Python package
-  __main__.py                   entry point: PDF assembly
+  __main__.py                   entry point: auto-discovers chapters, builds PDF
   styles.py                     fonts, styles, helpers
   vocab_registry.json           vocabulary (single source of truth)
-  chapters/                     one module per chapter, each exports build()
-    ch03_02_state_of_being.py
-    ch03_03_particles.py
-    ch03_04_adjectives.py
-    ...
+  chapters/                     one subdir per part, auto-discovered
+    ch03/                       Part 3: Basic Grammar
+      ch03_02_state_of_being.py
+      ch03_03_particles.py
+      ch03_04_adjectives.py
+      ...
 scripts/
   sync_vocab_registry.py        vocabulary validation
 fonts/                          NotoSansJP-Light.ttf
@@ -98,8 +99,8 @@ story.append(vocab_two_col(vocab_from_registry([
 ## Adding a New Chapter
 
 1. Add new words to `vocab_registry.json`
-2. Create `japanese_grammar_resume/chapters/ch03_XX_name.py` with a `build()` function (start with `PageBreak()`)
-3. Add the import in `__main__.py`
+2. Create `japanese_grammar_resume/chapters/chXX/chXX_YY_name.py` with a `build()` function (start with `PageBreak()`). Create the part subdir with an empty `__init__.py` if needed.
+3. Chapters are auto-discovered — no manual imports needed
 4. Validate: `.venv/bin/python3 scripts/sync_vocab_registry.py`
 5. Generate PDF: `bash generate-pdf.sh`
 

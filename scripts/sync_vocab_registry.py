@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate vocab_registry.json against chapter files.
 
-Parses each ch03_*.py via the ast module (no reportlab import needed),
+Scans chapters/ch*/ch*.py via the ast module (no reportlab import needed),
 finds vocab_from_registry([...]) calls, extracts keys, and checks that
 every key exists in the registry.
 
@@ -55,7 +55,7 @@ def extract_keys_from_file(path: Path) -> list[str]:
 def main() -> None:
     registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
 
-    chapter_files = sorted(CHAPTERS_DIR.glob("ch03_*.py"), key=chapter_sort_key)
+    chapter_files = sorted(CHAPTERS_DIR.glob("ch*/ch*.py"), key=chapter_sort_key)
 
     all_ok = True
     total_keys = 0
