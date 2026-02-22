@@ -1,3 +1,5 @@
+import argparse
+
 from .styles import *
 
 from .chapters import ch03_02_state_of_being
@@ -13,8 +15,13 @@ from .chapters import ch03_11_noun_particles
 
 
 def main():
-    output_path = os.path.join(BASE_DIR, "output", "japanese_summary.pdf")
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    parser = argparse.ArgumentParser(description="Generate Japanese grammar summary PDF")
+    parser.add_argument("-o", "--output-dir", default=os.path.join(BASE_DIR, "output"),
+                        help="Output directory (default: output/)")
+    args = parser.parse_args()
+
+    output_path = os.path.join(args.output_dir, "japanese_summary.pdf")
+    os.makedirs(args.output_dir, exist_ok=True)
     doc = SimpleDocTemplate(output_path, pagesize=A4,
                             leftMargin=15*mm, rightMargin=15*mm,
                             topMargin=12*mm, bottomMargin=12*mm,
