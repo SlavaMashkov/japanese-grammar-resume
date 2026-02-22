@@ -6,7 +6,7 @@ Each book chapter is a separate Python module; they are all assembled into a sin
 
 ## Example
 
-Here's what a page with adjective conjugation looks like:
+Here's what a page with the chapter 3.8 Particles Used with Verbs looks like:
 
 ![Example page — Chapter 3.8 Particles Used with Verbs](docs/screenshot.png)
 
