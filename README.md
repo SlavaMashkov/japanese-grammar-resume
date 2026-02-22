@@ -8,7 +8,7 @@ Each book chapter is a separate Python module; they are all assembled into a sin
 
 Here's what a page with adjective conjugation looks like:
 
-<!-- TODO: add screenshot output/screenshot.png -->
+![Example page — Chapter 3.8 Particles Used with Verbs](docs/screenshot.png)
 
 ## Getting Started
 
