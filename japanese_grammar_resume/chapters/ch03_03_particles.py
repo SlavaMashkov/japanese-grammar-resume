@@ -17,19 +17,9 @@ def build():
     story.append(section_header("Vocabulary"))
     story.append(Spacer(1, 1*mm))
 
-    vocab33 = [
-        ([("がく","学"),("せい","生")],                  "student"),
-        ([("あした","明日")],                            "tomorrow"),
-        ([("きょう","今日")],                            "today"),
-        ([("し","試"),("けん","験")],                    "exam"),
-        ([("だれ","誰")],                                "who"),
-        ([("わたし","私")],                              "me; I"),
-        ([("","で"),("","も")],                          "but"),
-        ([("","う"),("","ん")],                          "yes (casual)"),
-        ([("","う"),("","う"),("","ん")],                "no (casual)"),
-    ]
-
-    story.append(vocab_two_col(vocab33))
+    story.append(vocab_two_col(vocab_from_registry([
+        "誰", "私", "でも",
+    ])))
     story.append(Spacer(1, 3.5*mm))
 
     # --- Particles Table ---

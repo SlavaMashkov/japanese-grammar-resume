@@ -13,28 +13,11 @@ def build():
 
     story.append(section_header("Vocabulary"))
     story.append(Spacer(1, 1*mm))
-    vocab311 = [
-        ([("ほん","本")],                                "book"),
-        ([("ざっ","雑"),("し","誌")],                    "magazine"),
-        ([("はが","葉"),("き","書")],                    "postcard"),
-        ([("せん","先"),("せい","生")],                  "teacher"),
-        ([("の","飲"),("み","み"),("もの","物")],         "beverage"),
-        ([("くつ","靴")],                                "shoes"),
-        ([("だい","大"),("がく","学")],                  "college"),
-        ([("しろ","白"),("","い")],                      "white  (i-adj)"),
-        ([("","か"),("","わ"),("","い"),("","い")],      "cute  (i-adj)"),
-        ([("じゅ","授"),("ぎょう","業")],                "class"),
-        ([("わす","忘"),("","れ"),("","る")],            "to forget  (ru-verb)"),
-        ([("","こ"),("","と")],                          "event; matter (abstract noun)"),
-        ([("たい","大"),("へん","変")],                  "tough; hard time  (na-adj)"),
-        ([("おな","同"),("","じ")],                      "same"),
-        ([("もの","物")],                                "object; thing"),
-        ([("おも","面"),("しろ","白"),("","い")],        "interesting  (i-adj)"),
-        ([("いま","今")],                                "now"),
-        ([("いそが","忙"),("","し"),("","い")],          "busy  (i-adj)"),
-        ([("あさ","朝"),("","ご"),("はん","飯")],        "breakfast"),
-    ]
-    story.append(vocab_two_col(vocab311))
+    story.append(vocab_two_col(vocab_from_registry([
+        "本", "雑誌", "葉書", "先生", "飲み物", "靴", "大学", "白い",
+        "かわいい", "授業", "忘れる", "こと", "大変", "同じ", "物",
+        "面白い", "今", "忙しい", "朝ご飯",
+    ])))
     story.append(Spacer(1, 3.5*mm))
 
     story.append(section_header("Grammar: Noun-related Particles"))

@@ -13,19 +13,9 @@ def build():
 
     story.append(section_header("Vocabulary"))
     story.append(Spacer(1, 1*mm))
-    vocab37 = [
-        ([("す","捨"),("","て"),("","る")],              "to throw away  (ru-verb)"),
-        ([("か","書"),("","く")],                        "to write  (u-verb)"),
-        ([("も","持"),("","つ")],                        "to hold  (u-verb)"),
-        ([("い","行"),("","く")],                        "to go  (u-verb)"),
-        ([("はし","走"),("","る")],                      "to run  (u-verb)"),
-        ([("","ご"),("はん","飯")],                      "rice; meal"),
-        ([("えい","映"),("","が")],                      "movie"),
-        ([("ぜん","全"),("","ぶ")],                      "everything"),
-        ([("べん","勉"),("きょう","強")],                "study"),
-        ([("とも","友"),("だち","達")],                  "friend"),
-    ]
-    story.append(vocab_two_col(vocab37))
+    story.append(vocab_two_col(vocab_from_registry([
+        "捨てる", "書く", "持つ", "行く", "走る", "ご飯", "映が", "全ぶ", "勉強",
+    ])))
     story.append(Spacer(1, 3.5*mm))
 
     story.append(section_header("Grammar: Past Tense Conjugation Rules"))

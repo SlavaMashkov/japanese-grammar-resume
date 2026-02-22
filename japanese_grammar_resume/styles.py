@@ -1,3 +1,4 @@
+import json
 import os
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
@@ -151,3 +152,20 @@ def vocab_two_col(vocab_list):
                                     ('TOPPADDING',(0,0),(-1,-1),0),
                                     ('BOTTOMPADDING',(0,0),(-1,-1),0)]))
     return outer
+
+
+_registry_cache = None
+
+def vocab_from_registry(keys):
+    """Load words from vocab_registry.json by keys, return list for vocab_two_col()."""
+    global _registry_cache
+    if _registry_cache is None:
+        reg_path = os.path.join(os.path.dirname(__file__), "vocab_registry.json")
+        with open(reg_path, encoding="utf-8") as f:
+            _registry_cache = json.load(f)
+    result = []
+    for key in keys:
+        entry = _registry_cache[key]
+        pairs = [tuple(p) for p in entry["pairs"]]
+        result.append((pairs, entry["meaning"]))
+    return result

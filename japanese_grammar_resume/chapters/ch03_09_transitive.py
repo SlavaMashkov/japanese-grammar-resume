@@ -13,27 +13,11 @@ def build():
 
     story.append(section_header("Vocabulary"))
     story.append(Spacer(1, 1*mm))
-    vocab39 = [
-        ([("でん","電"),("き","気")],                    "electricity; lights"),
-        ([("まど","窓")],                                "window"),
-        ([("はこ","箱")],                                "box"),
-        ([("お","落"),("","と"),("","す")],              "to drop  (u-verb, transitive)"),
-        ([("お","落"),("","ち"),("","る")],              "to fall  (ru-verb, intransitive)"),
-        ([("だ","出"),("","す")],                        "to take out  (u-verb, transitive)"),
-        ([("い","入"),("","れ"),("","る")],              "to insert  (ru-verb, transitive)"),
-        ([("はい","入"),("","る")],                      "to enter  (u-verb, intransitive)"),
-        ([("あ","開"),("","け"),("","る")],              "to open  (ru-verb, transitive)"),
-        ([("あ","開"),("","く")],                        "to be opened  (u-verb, intransitive)"),
-        ([("し","閉"),("","め"),("","る")],              "to close  (ru-verb, transitive)"),
-        ([("し","閉"),("","ま"),("","る")],              "to be closed  (u-verb, intransitive)"),
-        ([("","つ"),("","け"),("","る")],                "to attach  (ru-verb, transitive)"),
-        ([("","つ"),("","く")],                          "to be attached  (u-verb, intransitive)"),
-        ([("け","消"),("","す")],                        "to erase; turn off  (u-verb, transitive)"),
-        ([("き","消"),("","え"),("","る")],              "to disappear  (ru-verb, intransitive)"),
-        ([("ぬ","抜"),("","く")],                        "to extract  (u-verb, transitive)"),
-        ([("ぬ","抜"),("","け"),("","る")],              "to be extracted  (ru-verb, intransitive)"),
-    ]
-    story.append(vocab_two_col(vocab39))
+    story.append(vocab_two_col(vocab_from_registry([
+        "電気", "窓", "箱", "落とす", "落ちる", "出す", "入れる", "入る",
+        "開ける", "開く", "閉める", "閉まる", "つける", "つく", "消す", "消える",
+        "抜く", "抜ける",
+    ])))
     story.append(Spacer(1, 3.5*mm))
 
     story.append(section_header("Grammar: Transitive vs Intransitive"))

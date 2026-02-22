@@ -13,20 +13,10 @@ def build():
 
     story.append(section_header("Vocabulary"))
     story.append(Spacer(1, 1*mm))
-    vocab310 = [
-        ([("こ","子"),("ども","供")],                    "child"),
-        ([("りっ","立"),("ぱ","派")],                    "fine; elegant  (na-adj)"),
-        ([("おとな","大人")],                            "adult"),
-        ([("し","仕"),("ごと","事")],                    "job"),
-        ([("や","辞"),("","め"),("","る")],              "to quit  (ru-verb)"),
-        ([("","い"),("","つ"),("","も")],                "always"),
-        ([("あか","赤"),("","い")],                      "red  (i-adj)"),
-        ([("ばん","晩"),("","ご"),("はん","飯")],        "dinner"),
-        ([("ぎん","銀"),("こう","行")],                  "bank"),
-        ([("こう","公"),("えん","園")],                  "park"),
-        ([("","お"),("べん","弁"),("とう","当")],        "box lunch"),
-    ]
-    story.append(vocab_two_col(vocab310))
+    story.append(vocab_two_col(vocab_from_registry([
+        "子供", "立派", "大人", "仕事", "辞める", "いつも", "赤い",
+        "晩ご飯", "銀行", "公園", "お弁当",
+    ])))
     story.append(Spacer(1, 3.5*mm))
 
     story.append(section_header("Grammar: Relative Clauses as Adjectives"))

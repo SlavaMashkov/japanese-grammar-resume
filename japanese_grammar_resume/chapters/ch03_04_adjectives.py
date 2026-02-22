@@ -17,27 +17,10 @@ def build():
     story.append(section_header("Vocabulary"))
     story.append(Spacer(1, 1*mm))
 
-    vocab34 = [
-        ([("しず","静"),("","か")],                      "quiet  (na-adj)"),
-        ([("","き"),("","れ"),("","い")],                "pretty; clean  (na-adj)"),
-        ([("しん","親"),("せつ","切")],                  "kind  (na-adj)"),
-        ([("す","好"),("","き")],                          "likable; desirable  (na-adj)"),
-        ([("き","嫌"),("","ら"),("","い")],                "distasteful; hateful  (na-adj)"),
-        ([("","い"),("","い")],                          "good  (i-adj)  *conjugates from よい"),
-        ([("","お"),("","い"),("","し"),("","い")],      "tasty  (i-adj)"),
-        ([("たか","高"),("","い")],                      "high; tall; expensive  (i-adj)"),
-        ([("","か"),("","っ"),("","こ"),("","い"),("","い")], "cool; handsome  (i-adj)  *conjugates from かっこよい"),
-        ([("ひと","人")],                                "person"),
-        ([("さかな","魚")],                              "fish"),
-        ([("にく","肉")],                                "meat"),
-        ([("","や"),("さい","菜")],                      "vegetables"),
-        ([("た","食"),("","べ"),("もの","物")],           "food"),
-        ([("ね","値"),("だん","段")],                     "price"),
-        ([("かれ","彼")],                                "he; boyfriend"),
-        ([("","あ"),("","ま"),("","り")],                "not very  (used with negative)"),
-    ]
-
-    story.append(vocab_two_col(vocab34))
+    story.append(vocab_two_col(vocab_from_registry([
+        "静か", "きれい", "親切", "好き", "嫌らい", "いい", "おいしい", "高い",
+        "かっこいい", "魚", "肉", "や菜", "食べ物", "値段", "彼", "あまり",
+    ])))
     story.append(Spacer(1, 3.5*mm))
 
     # --- Adjective Types ---

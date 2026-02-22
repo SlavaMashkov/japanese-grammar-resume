@@ -13,34 +13,11 @@ def build():
 
     story.append(section_header("Vocabulary"))
     story.append(Spacer(1, 1*mm))
-    vocab35 = [
-        ([("た","食"),("","べ"),("","る")],              "to eat  (ru-verb)"),
-        ([("わ","分"),("","か"),("","る")],              "to understand  (u-verb)"),
-        ([("み","見"),("","る")],                        "to see  (ru-verb)"),
-        ([("ね","寝"),("","る")],                        "to sleep  (ru-verb)"),
-        ([("お","起"),("","き"),("","る")],              "to wake; to occur  (ru-verb)"),
-        ([("かんが","考"),("","え"),("","る")],          "to think  (ru-verb)"),
-        ([("おし","教"),("","え"),("","る")],            "to teach; to inform  (ru-verb)"),
-        ([("で","出"),("","る")],                        "to come out  (ru-verb)"),
-        ([("","い"),("","る")],                          "to exist — animate  (ru-verb)"),
-        ([("き","着"),("","る")],                        "to wear  (ru-verb)"),
-        ([("はな","話"),("","す")],                      "to speak  (u-verb)"),
-        ([("き","聞"),("","く")],                        "to ask; to listen  (u-verb)"),
-        ([("およ","泳"),("","ぐ")],                      "to swim  (u-verb)"),
-        ([("あそ","遊"),("","ぶ")],                      "to play  (u-verb)"),
-        ([("ま","待"),("","つ")],                        "to wait  (u-verb)"),
-        ([("の","飲"),("","む")],                        "to drink  (u-verb)"),
-        ([("か","買"),("","う")],                        "to buy  (u-verb)"),
-        ([("","あ"),("","る")],                          "to exist — inanimate  (u-verb)"),
-        ([("し","死"),("","ぬ")],                        "to die  (u-verb)"),
-        ([("","す"),("","る")],                          "to do  (exception)"),
-        ([("く","来"),("","る")],                        "to come  (exception)"),
-        ([("お","お"),("かね","金")],                    "money"),
-        ([("わたし","私")],                              "me; I"),
-        ([("かえ","帰"),("","る")],                      "to go home  (u-verb)"),
-        ([("ねこ","猫")],                                "cat"),
-    ]
-    story.append(vocab_two_col(vocab35))
+    story.append(vocab_two_col(vocab_from_registry([
+        "食べる", "分かる", "見る", "寝る", "起きる", "考える", "教える", "出る",
+        "いる", "着る", "話す", "聞く", "泳ぐ", "遊ぶ", "待つ", "飲む", "買う",
+        "ある", "死ぬ", "する", "来る", "お金", "帰る", "猫",
+    ])))
     story.append(Spacer(1, 3.5*mm))
 
     story.append(section_header("Grammar: Verb Types"))

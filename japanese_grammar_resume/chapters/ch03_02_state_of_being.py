@@ -16,19 +16,9 @@ def build():
     story.append(section_header("Vocabulary"))
     story.append(Spacer(1, 1*mm))
 
-    vocab = [
-        ([("ひと","人")],                               "person"),
-        ([("がく","学"),("せい","生")],                  "student"),
-        ([("げん","元"),("き","気")],                    "healthy; lively  (*used as a greeting about one's wellbeing)"),
-        ([("とも","友"),("だち","達")],                  "friend"),
-        ([("あした","明日")],                            "tomorrow"),
-        ([("きょう","今日")],                            "today"),
-        ([("し","試"),("けん","験")],                    "exam"),
-        ([("","う"),("","ん")],                          "yes (casual)"),
-        ([("","う"),("","う"),("","ん")],                "no (casual)"),
-    ]
-
-    story.append(vocab_two_col(vocab))
+    story.append(vocab_two_col(vocab_from_registry([
+        "人", "学生", "元気", "友達", "明日", "今日", "試験", "うん", "ううん",
+    ])))
     story.append(Spacer(1, 3.5*mm))
 
     # --- Conjugation Table ---

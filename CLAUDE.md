@@ -11,10 +11,13 @@ generate-pdf.sh                    — обёртка для запуска че
 fonts/                             — шрифты (NotoSansJP-Light.ttf для японского текста)
 output/                            — сгенерированные PDF файлы
 .venv/                             — виртуальное окружение Python
+scripts/
+  sync_vocab_registry.py           — валидация vocab_registry.json (проверка ключей из глав)
 japanese_grammar_resume/           — Python-пакет
   __init__.py
   __main__.py                      — точка входа: импорт глав, сборка PDF
-  styles.py                        — шрифты, цвета, стили, хелперы (jp, cell, section_header, kanji_cell, vocab_two_col, TABLE_STYLE)
+  styles.py                        — шрифты, цвета, стили, хелперы (jp, cell, section_header, kanji_cell, vocab_two_col, vocab_from_registry, TABLE_STYLE)
+  vocab_registry.json              — реестр уникальных слов по главам
   chapters/                        — по одному файлу на главу, каждый экспортирует build() → list
     __init__.py
     ch03_02_state_of_being.py
@@ -57,6 +60,44 @@ bash generate-pdf.sh
 2. Импортировать `from ..styles import *` — все хелперы и стили доступны.
 3. Первая глава (3.2) не начинается с `PageBreak()`, все остальные — начинаются.
 4. Добавить импорт и вызов `build()` в `japanese_grammar_resume/__main__.py`.
+
+## Vocab Registry
+
+Файл `japanese_grammar_resume/vocab_registry.json` — единственный источник данных о словах. Ключ — написание слова (кандзи или кана), значение — `{ pairs, meaning, chapter }`:
+
+```json
+{
+  "学生": {
+    "pairs": [["がく", "学"], ["せい", "生"]],
+    "meaning": "student",
+    "chapter": "ch03_02"
+  }
+}
+```
+
+- `pairs` — матрица `[[furigana, char], ...]` для рендеринга через `kanji_cell()`
+- `meaning` — перевод слова
+- `chapter` — глава первого появления
+
+Главы ссылаются на слова по ключу через хелпер `vocab_from_registry()`:
+
+```python
+story.append(vocab_two_col(vocab_from_registry([
+    "人", "学生", "元気", "友達",
+])))
+```
+
+Скрипт `scripts/sync_vocab_registry.py` валидирует реестр — проверяет, что все ключи из глав существуют в JSON.
+
+```bash
+.venv/bin/python3 scripts/sync_vocab_registry.py
+```
+
+### Workflow при добавлении новой главы
+
+1. Добавить новые слова в `vocab_registry.json` (проверить по реестру, какие слова уже были)
+2. Создать главу (см. «Добавление новой главы»), использовать `vocab_from_registry([...ключи...])`
+3. Запустить `sync_vocab_registry.py` — валидация ключей
 
 ## Когда обновлять CLAUDE.md
 
