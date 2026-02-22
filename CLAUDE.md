@@ -30,6 +30,7 @@ japanese_grammar_resume/           — Python package
     ch03_09_transitive.py
     ch03_10_relative_clauses.py
     ch03_11_noun_particles.py
+    ch03_12_adverbs.py
 ```
 
 ## Running

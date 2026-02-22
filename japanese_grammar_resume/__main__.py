@@ -11,6 +11,7 @@ from .chapters import (
     ch03_09_transitive,
     ch03_10_relative_clauses,
     ch03_11_noun_particles,
+    ch03_12_adverbs,
 )
 from .styles import *
 
@@ -50,6 +51,7 @@ def main():
     story += ch03_09_transitive.build()
     story += ch03_10_relative_clauses.build()
     story += ch03_11_noun_particles.build()
+    story += ch03_12_adverbs.build()
 
     doc.build(story)
     print("Done:", output_path)

@@ -839,20 +839,6 @@
     "meaning": "rice; meal",
     "chapter": "ch03_07"
   },
-  "映が": {
-    "pairs": [
-      [
-        "えい",
-        "映"
-      ],
-      [
-        "",
-        "が"
-      ]
-    ],
-    "meaning": "movie",
-    "chapter": "ch03_07"
-  },
   "全ぶ": {
     "pairs": [
       [
@@ -1994,5 +1980,275 @@
     ],
     "meaning": "breakfast",
     "chapter": "ch03_11"
+  },
+  "映画": {
+    "pairs": [
+      [
+        "えい",
+        "映"
+      ],
+      [
+        "が",
+        "画"
+      ]
+    ],
+    "meaning": "movie",
+    "chapter": "ch03_07"
+  },
+  "早い": {
+    "pairs": [
+      [
+        "はや",
+        "早"
+      ],
+      [
+        "",
+        "い"
+      ]
+    ],
+    "meaning": "fast; early  (i-adj)",
+    "chapter": "ch03_12"
+  },
+  "自分": {
+    "pairs": [
+      [
+        "じ",
+        "自"
+      ],
+      [
+        "ぶん",
+        "分"
+      ]
+    ],
+    "meaning": "oneself",
+    "chapter": "ch03_12"
+  },
+  "たくさん": {
+    "pairs": [
+      [
+        "",
+        "た"
+      ],
+      [
+        "",
+        "く"
+      ],
+      [
+        "",
+        "さ"
+      ],
+      [
+        "",
+        "ん"
+      ]
+    ],
+    "meaning": "a lot (amount)",
+    "chapter": "ch03_12"
+  },
+  "最近": {
+    "pairs": [
+      [
+        "さい",
+        "最"
+      ],
+      [
+        "きん",
+        "近"
+      ]
+    ],
+    "meaning": "recent; lately",
+    "chapter": "ch03_12"
+  },
+  "全然": {
+    "pairs": [
+      [
+        "ぜん",
+        "全"
+      ],
+      [
+        "ぜん",
+        "然"
+      ]
+    ],
+    "meaning": "not at all (when used with negative)",
+    "chapter": "ch03_12"
+  },
+  "声": {
+    "pairs": [
+      [
+        "こえ",
+        "声"
+      ]
+    ],
+    "meaning": "voice",
+    "chapter": "ch03_12"
+  },
+  "結構": {
+    "pairs": [
+      [
+        "けっ",
+        "結"
+      ],
+      [
+        "こう",
+        "構"
+      ]
+    ],
+    "meaning": "fairly; reasonably",
+    "chapter": "ch03_12"
+  },
+  "大きい": {
+    "pairs": [
+      [
+        "おお",
+        "大"
+      ],
+      [
+        "",
+        "き"
+      ],
+      [
+        "",
+        "い"
+      ]
+    ],
+    "meaning": "big  (i-adj)",
+    "chapter": "ch03_12"
+  },
+  "この": {
+    "pairs": [
+      [
+        "",
+        "こ"
+      ],
+      [
+        "",
+        "の"
+      ]
+    ],
+    "meaning": "this (abbr. of これの)",
+    "chapter": "ch03_12"
+  },
+  "町": {
+    "pairs": [
+      [
+        "まち",
+        "町"
+      ]
+    ],
+    "meaning": "town",
+    "chapter": "ch03_12"
+  },
+  "変わる": {
+    "pairs": [
+      [
+        "か",
+        "変"
+      ],
+      [
+        "",
+        "わ"
+      ],
+      [
+        "",
+        "る"
+      ]
+    ],
+    "meaning": "to change  (u-verb)",
+    "chapter": "ch03_12"
+  },
+  "中": {
+    "pairs": [
+      [
+        "なか",
+        "中"
+      ]
+    ],
+    "meaning": "inside",
+    "chapter": "ch03_12"
+  },
+  "天気": {
+    "pairs": [
+      [
+        "てん",
+        "天"
+      ],
+      [
+        "き",
+        "気"
+      ]
+    ],
+    "meaning": "weather",
+    "chapter": "ch03_12"
+  },
+  "そう": {
+    "pairs": [
+      [
+        "",
+        "そ"
+      ],
+      [
+        "",
+        "う"
+      ]
+    ],
+    "meaning": "(things are) that way",
+    "chapter": "ch03_12"
+  },
+  "時間": {
+    "pairs": [
+      [
+        "じ",
+        "時"
+      ],
+      [
+        "かん",
+        "間"
+      ]
+    ],
+    "meaning": "time",
+    "chapter": "ch03_12"
+  },
+  "大丈夫": {
+    "pairs": [
+      [
+        "だい",
+        "大"
+      ],
+      [
+        "じょう",
+        "丈"
+      ],
+      [
+        "ぶ",
+        "夫"
+      ]
+    ],
+    "meaning": "ok  (na-adj)",
+    "chapter": "ch03_12"
+  },
+  "雨": {
+    "pairs": [
+      [
+        "あめ",
+        "雨"
+      ]
+    ],
+    "meaning": "rain",
+    "chapter": "ch03_12"
+  },
+  "降る": {
+    "pairs": [
+      [
+        "ふ",
+        "降"
+      ],
+      [
+        "",
+        "る"
+      ]
+    ],
+    "meaning": "to precipitate  (u-verb)",
+    "chapter": "ch03_12"
   }
 }
