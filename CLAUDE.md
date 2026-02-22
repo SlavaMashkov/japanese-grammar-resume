@@ -96,6 +96,8 @@ The `jp()` function auto-detects CJK characters and switches the font accordingl
 - `meaning` — word translation
 - `chapter` — chapter of first appearance
 
+Each chapter's vocabulary section must contain only **new unique words** — words whose `chapter` field matches the current chapter. Do not include words that first appeared in earlier chapters.
+
 Chapters reference words by key via the `vocab_from_registry()` helper:
 
 ```python
