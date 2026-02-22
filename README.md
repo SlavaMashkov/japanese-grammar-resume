@@ -39,9 +39,21 @@ bash generate-pdf.sh -o ~/Desktop
 
 - Python 3.12+
 - [reportlab](https://docs.reportlab.com/) >= 4.0
+- [ruff](https://docs.astral.sh/ruff/) >= 0.15 (linting & formatting)
 - DejaVuSans font (usually pre-installed on Linux)
 
 The NotoSansJP-Light font for Japanese text is included in the repository (`fonts/`).
+
+## Code Quality
+
+`generate-pdf.sh` automatically formats and lints the code before building the PDF. If the linter finds errors, the build stops.
+
+To run manually:
+
+```bash
+.venv/bin/ruff format japanese_grammar_resume/ scripts/   # format
+.venv/bin/ruff check japanese_grammar_resume/ scripts/    # lint
+```
 
 ## Project Structure
 

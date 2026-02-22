@@ -48,6 +48,20 @@ Output: `output/japanese_summary.pdf` (default)
 
 - Python 3.12+ with venv
 - reportlab>=4.0 (installed in .venv, declared in `pyproject.toml` and `requirements.txt`)
+- ruff>=0.15 (dev dependency for linting/formatting)
+
+## Code Quality
+
+[ruff](https://docs.astral.sh/ruff/) is used for both linting and formatting. It runs automatically as part of `generate-pdf.sh` — code is formatted and checked before every PDF build. If the linter finds errors, the build stops.
+
+To run manually:
+
+```bash
+.venv/bin/ruff format japanese_grammar_resume/ scripts/   # format
+.venv/bin/ruff check japanese_grammar_resume/ scripts/    # lint
+```
+
+Configuration is in `pyproject.toml` under `[tool.ruff]`.
 
 ## Fonts
 
