@@ -4,7 +4,7 @@ from ...styles import *
 def build():
     story = []
 
-    # Title
+    story.append(PageBreak())
     story.append(Paragraph(jp("3.2  Expressing State-of-Being  (状態の表現)"), title_s))
     story.append(
         Table(
