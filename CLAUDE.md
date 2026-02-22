@@ -1,24 +1,24 @@
 # Japanese Grammar Resume
 
-PDF-резюме книги по японской грамматике (Tae Kim's Guide). Каждая глава добавляется к общему PDF.
+PDF summary of a Japanese grammar book (Tae Kim's Guide). Each chapter is appended to a single PDF.
 
-## Структура проекта
+## Project Structure
 
-```
-pyproject.toml                     — метаданные проекта, зависимости
-requirements.txt                   — зависимости для pip install -r
-generate-pdf.sh                    — обёртка для запуска через bash
-fonts/                             — шрифты (NotoSansJP-Light.ttf для японского текста)
-output/                            — сгенерированные PDF файлы
-.venv/                             — виртуальное окружение Python
+```txt
+pyproject.toml                     — project metadata, dependencies
+requirements.txt                   — dependencies for pip install -r
+generate-pdf.sh                    — bash wrapper for running the generator
+fonts/                             — fonts (NotoSansJP-Light.ttf for Japanese text)
+output/                            — generated PDF files
+.venv/                             — Python virtual environment
 scripts/
-  sync_vocab_registry.py           — валидация vocab_registry.json (проверка ключей из глав)
-japanese_grammar_resume/           — Python-пакет
+  sync_vocab_registry.py           — vocab_registry.json validation (checks keys from chapters)
+japanese_grammar_resume/           — Python package
   __init__.py
-  __main__.py                      — точка входа: импорт глав, сборка PDF
-  styles.py                        — шрифты, цвета, стили, хелперы (jp, cell, section_header, kanji_cell, vocab_two_col, vocab_from_registry, TABLE_STYLE)
-  vocab_registry.json              — реестр уникальных слов по главам
-  chapters/                        — по одному файлу на главу, каждый экспортирует build() → list
+  __main__.py                      — entry point: imports chapters, builds PDF
+  styles.py                        — fonts, colors, styles, helpers (jp, cell, section_header, kanji_cell, vocab_two_col, vocab_from_registry, TABLE_STYLE)
+  vocab_registry.json              — registry of unique words by chapter
+  chapters/                        — one file per chapter, each exports build() → list
     __init__.py
     ch03_02_state_of_being.py
     ch03_03_particles.py
@@ -32,38 +32,40 @@ japanese_grammar_resume/           — Python-пакет
     ch03_11_noun_particles.py
 ```
 
-## Запуск
+## Running
 
 ```bash
 bash generate-pdf.sh
-# или напрямую:
+# or directly:
 .venv/bin/python3 -m japanese_grammar_resume
+# with custom output directory:
+bash generate-pdf.sh -o ~/Desktop
 ```
 
-Результат: `output/japanese_summary.pdf`
+Output: `output/japanese_summary.pdf` (default)
 
-## Зависимости
+## Dependencies
 
-- Python 3.12+ с venv
-- reportlab>=4.0 (установлен в .venv, описан в `pyproject.toml` и `requirements.txt`)
+- Python 3.12+ with venv
+- reportlab>=4.0 (installed in .venv, declared in `pyproject.toml` and `requirements.txt`)
 
-## Шрифты
+## Fonts
 
-- **DV / DV-B** — DejaVuSans (системный, `/usr/share/fonts/truetype/dejavu/`)
-- **JP** — NotoSansJP-Light (`fonts/NotoSansJP-Light.ttf`, вес 300) — японский текст
+- **DV / DV-B** — DejaVuSans (system font, `/usr/share/fonts/truetype/dejavu/`)
+- **JP** — NotoSansJP-Light (`fonts/NotoSansJP-Light.ttf`, weight 300) — Japanese text
 
-Функция `jp()` автоматически определяет CJK-символы и переключает шрифт.
+The `jp()` function auto-detects CJK characters and switches the font accordingly.
 
-## Добавление новой главы
+## Adding a New Chapter
 
-1. Создать файл `japanese_grammar_resume/chapters/ch03_XX_name.py` с функцией `build()`, возвращающей `list` элементов story.
-2. Импортировать `from ..styles import *` — все хелперы и стили доступны.
-3. Первая глава (3.2) не начинается с `PageBreak()`, все остальные — начинаются.
-4. Добавить импорт и вызов `build()` в `japanese_grammar_resume/__main__.py`.
+1. Create `japanese_grammar_resume/chapters/ch03_XX_name.py` with a `build()` function returning a `list` of story elements.
+2. Import `from ..styles import *` — all helpers and styles are available.
+3. The first chapter (3.2) does not start with `PageBreak()`; all others do.
+4. Add the import and `build()` call in `japanese_grammar_resume/__main__.py`.
 
 ## Vocab Registry
 
-Файл `japanese_grammar_resume/vocab_registry.json` — единственный источник данных о словах. Ключ — написание слова (кандзи или кана), значение — `{ pairs, meaning, chapter }`:
+`japanese_grammar_resume/vocab_registry.json` is the single source of truth for word data. Key is the word spelling (kanji or kana), value is `{ pairs, meaning, chapter }`:
 
 ```json
 {
@@ -75,11 +77,11 @@ bash generate-pdf.sh
 }
 ```
 
-- `pairs` — матрица `[[furigana, char], ...]` для рендеринга через `kanji_cell()`
-- `meaning` — перевод слова
-- `chapter` — глава первого появления
+- `pairs` — matrix `[[furigana, char], ...]` for rendering via `kanji_cell()`
+- `meaning` — word translation
+- `chapter` — chapter of first appearance
 
-Главы ссылаются на слова по ключу через хелпер `vocab_from_registry()`:
+Chapters reference words by key via the `vocab_from_registry()` helper:
 
 ```python
 story.append(vocab_two_col(vocab_from_registry([
@@ -87,24 +89,25 @@ story.append(vocab_two_col(vocab_from_registry([
 ])))
 ```
 
-Скрипт `scripts/sync_vocab_registry.py` валидирует реестр — проверяет, что все ключи из глав существуют в JSON.
+The script `scripts/sync_vocab_registry.py` validates the registry — checks that all keys referenced in chapters exist in the JSON.
 
 ```bash
 .venv/bin/python3 scripts/sync_vocab_registry.py
 ```
 
-### Workflow при добавлении новой главы
+### Workflow for Adding a New Chapter
 
-1. Добавить новые слова в `vocab_registry.json` (проверить по реестру, какие слова уже были)
-2. Создать главу (см. «Добавление новой главы»), использовать `vocab_from_registry([...ключи...])`
-3. Запустить `sync_vocab_registry.py` — валидация ключей
+1. Add new words to `vocab_registry.json` (check the registry for words that already exist)
+2. Create the chapter (see "Adding a New Chapter"), use `vocab_from_registry([...keys...])`
+3. Run `sync_vocab_registry.py` — key validation
 
-## Когда обновлять CLAUDE.md
+## When to Update CLAUDE.md
 
-Обновляй этот файл при:
-- Добавлении новых глав — обнови список глав и описание контента
-- Изменении структуры проекта — новые папки, файлы, скрипты
-- Изменении зависимостей — новые пакеты, смена версий
-- Рефакторинге — если меняется API хелперов (jp(), cell(), section_header() и т.д.)
-- Изменении шрифтов или стилей оформления
-- Изменении процесса сборки или деплоя
+Update this file when:
+
+- Adding new chapters — update the chapter list and content description
+- Changing project structure — new folders, files, scripts
+- Changing dependencies — new packages, version changes
+- Refactoring — if the helper API changes (jp(), cell(), section_header(), etc.)
+- Changing fonts or styling
+- Changing the build or deploy process
