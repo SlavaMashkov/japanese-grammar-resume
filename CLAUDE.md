@@ -53,6 +53,8 @@ japanese_grammar_resume/           — Python package
       __init__.py
       ch04_00_essential_grammar.py
       ch04_01_polite_form.py
+      ch04_02_addressing_people.py
+      ch04_03_question_marker.py
 ```
 
 ## Running

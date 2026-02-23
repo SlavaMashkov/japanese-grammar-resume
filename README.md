@@ -79,6 +79,7 @@ japanese_grammar_resume/        Python package
     ch04/                       Part 4: Essential Grammar
       ch04_00_essential_grammar.py
       ch04_01_polite_form.py
+      ...
 scripts/
   sync_vocab_registry.py        vocabulary validation
 fonts/                          NotoSansJP-Light.ttf

@@ -2622,5 +2622,265 @@
     ],
     "meaning": "to answer  (ru-verb)",
     "chapter": "ch04_01"
+  },
+  "名前": {
+    "pairs": [["な", "名"], ["まえ", "前"]],
+    "meaning": "name",
+    "chapter": "ch04_02"
+  },
+  "僕": {
+    "pairs": [["ぼく", "僕"]],
+    "meaning": "I (masculine, polite-casual)",
+    "chapter": "ch04_02"
+  },
+  "俺": {
+    "pairs": [["おれ", "俺"]],
+    "meaning": "I (masculine, very casual)",
+    "chapter": "ch04_02"
+  },
+  "社長": {
+    "pairs": [["しゃ", "社"], ["ちょう", "長"]],
+    "meaning": "company president",
+    "chapter": "ch04_02"
+  },
+  "課長": {
+    "pairs": [["か", "課"], ["ちょう", "長"]],
+    "meaning": "section manager",
+    "chapter": "ch04_02"
+  },
+  "田中": {
+    "pairs": [["た", "田"], ["なか", "中"]],
+    "meaning": "Tanaka (last name)",
+    "chapter": "ch04_02"
+  },
+  "彼女": {
+    "pairs": [["かの", "彼"], ["じょ", "女"]],
+    "meaning": "she; girlfriend",
+    "chapter": "ch04_02"
+  },
+  "母": {
+    "pairs": [["はは", "母"]],
+    "meaning": "mother",
+    "chapter": "ch04_02"
+  },
+  "お母さん": {
+    "pairs": [["", "お"], ["かあ", "母"], ["", "さ"], ["", "ん"]],
+    "meaning": "mother (polite)",
+    "chapter": "ch04_02"
+  },
+  "両親": {
+    "pairs": [["りょう", "両"], ["しん", "親"]],
+    "meaning": "parents",
+    "chapter": "ch04_02"
+  },
+  "父": {
+    "pairs": [["ちち", "父"]],
+    "meaning": "father",
+    "chapter": "ch04_02"
+  },
+  "お父さん": {
+    "pairs": [["", "お"], ["とう", "父"], ["", "さ"], ["", "ん"]],
+    "meaning": "father (polite)",
+    "chapter": "ch04_02"
+  },
+  "妻": {
+    "pairs": [["つま", "妻"]],
+    "meaning": "wife",
+    "chapter": "ch04_02"
+  },
+  "奥さん": {
+    "pairs": [["おく", "奥"], ["", "さ"], ["", "ん"]],
+    "meaning": "wife (polite)",
+    "chapter": "ch04_02"
+  },
+  "夫": {
+    "pairs": [["おっと", "夫"]],
+    "meaning": "husband",
+    "chapter": "ch04_02"
+  },
+  "主人": {
+    "pairs": [["しゅ", "主"], ["じん", "人"]],
+    "meaning": "husband (polite)",
+    "chapter": "ch04_02"
+  },
+  "姉": {
+    "pairs": [["あね", "姉"]],
+    "meaning": "older sister",
+    "chapter": "ch04_02"
+  },
+  "お姉さん": {
+    "pairs": [["", "お"], ["ねえ", "姉"], ["", "さ"], ["", "ん"]],
+    "meaning": "older sister (polite)",
+    "chapter": "ch04_02"
+  },
+  "兄": {
+    "pairs": [["あに", "兄"]],
+    "meaning": "older brother",
+    "chapter": "ch04_02"
+  },
+  "お兄さん": {
+    "pairs": [["", "お"], ["にい", "兄"], ["", "さ"], ["", "ん"]],
+    "meaning": "older brother (polite)",
+    "chapter": "ch04_02"
+  },
+  "妹": {
+    "pairs": [["いもうと", "妹"]],
+    "meaning": "younger sister",
+    "chapter": "ch04_02"
+  },
+  "弟": {
+    "pairs": [["おとうと", "弟"]],
+    "meaning": "younger brother",
+    "chapter": "ch04_02"
+  },
+  "息子": {
+    "pairs": [["むす", "息"], ["こ", "子"]],
+    "meaning": "son",
+    "chapter": "ch04_02"
+  },
+  "娘": {
+    "pairs": [["むすめ", "娘"]],
+    "meaning": "daughter",
+    "chapter": "ch04_02"
+  },
+  "鈴木": {
+    "pairs": [["すず", "鈴"], ["き", "木"]],
+    "meaning": "Suzuki (last name)",
+    "chapter": "ch04_03"
+  },
+  "買い物": {
+    "pairs": [["か", "買"], ["", "い"], ["もの", "物"]],
+    "meaning": "shopping",
+    "chapter": "ch04_03"
+  },
+  "料理": {
+    "pairs": [["りょう", "料"], ["り", "理"]],
+    "meaning": "cooking; cuisine; dish",
+    "chapter": "ch04_03"
+  },
+  "すみません": {
+    "pairs": [["", "す"], ["", "み"], ["", "ま"], ["", "せ"], ["", "ん"]],
+    "meaning": "sorry (polite)",
+    "chapter": "ch04_03"
+  },
+  "ちょっと": {
+    "pairs": [["", "ち"], ["", "ょ"], ["", "っ"], ["", "と"]],
+    "meaning": "a little",
+    "chapter": "ch04_03"
+  },
+  "お腹": {
+    "pairs": [["", "お"], ["なか", "腹"]],
+    "meaning": "stomach",
+    "chapter": "ch04_03"
+  },
+  "いっぱい": {
+    "pairs": [["", "い"], ["", "っ"], ["", "ぱ"], ["", "い"]],
+    "meaning": "full",
+    "chapter": "ch04_03"
+  },
+  "ごめんなさい": {
+    "pairs": [["", "ご"], ["", "め"], ["", "ん"], ["", "な"], ["", "さ"], ["", "い"]],
+    "meaning": "sorry (polite)",
+    "chapter": "ch04_03"
+  },
+  "ごめん": {
+    "pairs": [["", "ご"], ["", "め"], ["", "ん"]],
+    "meaning": "sorry (casual)",
+    "chapter": "ch04_03"
+  },
+  "こんな": {
+    "pairs": [["", "こ"], ["", "ん"], ["", "な"]],
+    "meaning": "this sort of",
+    "chapter": "ch04_03"
+  },
+  "本当": {
+    "pairs": [["ほん", "本"], ["とう", "当"]],
+    "meaning": "real",
+    "chapter": "ch04_03"
+  },
+  "そんな": {
+    "pairs": [["", "そ"], ["", "ん"], ["", "な"]],
+    "meaning": "that sort of",
+    "chapter": "ch04_03"
+  },
+  "どう": {
+    "pairs": [["", "ど"], ["", "う"]],
+    "meaning": "how",
+    "chapter": "ch04_03"
+  },
+  "知る": {
+    "pairs": [["し", "知"], ["", "る"]],
+    "meaning": "to know  (u-verb)",
+    "chapter": "ch04_03"
+  },
+  "盗む": {
+    "pairs": [["ぬす", "盗"], ["", "む"]],
+    "meaning": "to steal  (u-verb)",
+    "chapter": "ch04_03"
+  },
+  "犯人": {
+    "pairs": [["はん", "犯"], ["にん", "人"]],
+    "meaning": "criminal",
+    "chapter": "ch04_03"
+  },
+  "選ぶ": {
+    "pairs": [["えら", "選"], ["", "ぶ"]],
+    "meaning": "to select  (u-verb)",
+    "chapter": "ch04_03"
+  },
+  "皆": {
+    "pairs": [["みんな", "皆"]],
+    "meaning": "everybody",
+    "chapter": "ch04_03"
+  },
+  "皆さん": {
+    "pairs": [["みな", "皆"], ["", "さ"], ["", "ん"]],
+    "meaning": "everybody (polite)",
+    "chapter": "ch04_03"
+  },
+  "質問": {
+    "pairs": [["しつ", "質"], ["もん", "問"]],
+    "meaning": "question",
+    "chapter": "ch04_03"
+  },
+  "答え": {
+    "pairs": [["こた", "答"], ["", "え"]],
+    "meaning": "answer",
+    "chapter": "ch04_03"
+  },
+  "遅れる": {
+    "pairs": [["おく", "遅"], ["", "れ"], ["", "る"]],
+    "meaning": "to be late  (ru-verb)",
+    "chapter": "ch04_03"
+  },
+  "ここ": {
+    "pairs": [["", "こ"], ["", "こ"]],
+    "meaning": "here",
+    "chapter": "ch04_03"
+  },
+  "レストラン": {
+    "pairs": [["", "レ"], ["", "ス"], ["", "ト"], ["", "ラ"], ["", "ン"]],
+    "meaning": "restaurant",
+    "chapter": "ch04_03"
+  },
+  "今週末": {
+    "pairs": [["こん", "今"], ["しゅう", "週"], ["まつ", "末"]],
+    "meaning": "this weekend",
+    "chapter": "ch04_03"
+  },
+  "あの": {
+    "pairs": [["", "あ"], ["", "の"]],
+    "meaning": "that (over there) (abbr. of あれの)",
+    "chapter": "ch04_03"
+  },
+  "イタリア": {
+    "pairs": [["", "イ"], ["", "タ"], ["", "リ"], ["", "ア"]],
+    "meaning": "Italy",
+    "chapter": "ch04_03"
+  },
+  "クッキー": {
+    "pairs": [["", "ク"], ["", "ッ"], ["", "キ"], ["", "ー"]],
+    "meaning": "cookie",
+    "chapter": "ch04_03"
   }
 }
