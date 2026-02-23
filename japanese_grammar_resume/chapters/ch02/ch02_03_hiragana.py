@@ -57,7 +57,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Basic Kana", hira_t))
+    story.append(section("Basic Kana", hira_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Voiced Sounds (Dakuten / Handakuten) ---
@@ -86,7 +86,7 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Voiced Sounds  （濁点 ゛・半濁点 ゜）"), voiced_t))
+    story.append(section(jp("Voiced Sounds  （濁点 ゛・半濁点 ゜）"), voiced_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Combinations (Small や、ゆ、よ) ---
@@ -124,11 +124,11 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Combinations  （拗音 — 小さい や・ゆ・よ）"), combo_t))
+    story.append(section(jp("Combinations  （拗音 — 小さい や・ゆ・よ）"), combo_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp("Pronunciation exceptions: し = shi, ち = chi, つ = tsu, ふ = fu, を = o (as particle)."),

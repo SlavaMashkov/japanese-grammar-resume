@@ -16,7 +16,7 @@ scripts/
 japanese_grammar_resume/           — Python package
   __init__.py
   __main__.py                      — entry point: auto-discovers chapters, builds PDF
-  styles.py                        — fonts, colors, styles, helpers (jp, cell, section_header, kanji_cell, vocab_two_col, vocab_from_registry, TABLE_STYLE)
+  styles.py                        — fonts, colors, styles, helpers (jp, cell, section, kanji_cell, vocab_two_col, vocab_from_registry, TABLE_STYLE)
   vocab_registry.json              — registry of unique words by chapter
   chapters/                        — one subdir per part, auto-discovered
     __init__.py
@@ -139,6 +139,6 @@ Update this file when:
 - Adding new chapters — update the chapter list and content description
 - Changing project structure — new folders, files, scripts
 - Changing dependencies — new packages, version changes
-- Refactoring — if the helper API changes (jp(), cell(), section_header(), etc.)
+- Refactoring — if the helper API changes (jp(), cell(), section(), etc.)
 - Changing fonts or styling
 - Changing the build or deploy process

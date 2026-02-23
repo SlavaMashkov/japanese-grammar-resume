@@ -24,7 +24,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary 3.3 ---
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
 
     story.append(
@@ -78,11 +78,11 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: The Three Particles", pt))
+    story.append(section("Grammar: The Three Particles", pt))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- は vs が comparison ---
-    story.append(section_header(jp("Note: は vs が")))
+    story.append(section(jp("Note: は vs が")))
     story.append(Spacer(1, 1 * mm))
 
     hg = [
@@ -108,7 +108,7 @@ def build():
     story.append(hgt)
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     notes33 = [
         jp("Once a topic is set with は, it doesn't need to be repeated — context carries it forward."),

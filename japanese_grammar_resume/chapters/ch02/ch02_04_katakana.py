@@ -57,7 +57,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Basic Kana", kata_t))
+    story.append(section("Basic Kana", kata_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Additional Sounds (Small ア、イ、ウ、エ、オ) ---
@@ -88,7 +88,7 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Additional Sounds  （小さい ア・イ・ウ・エ・オ）"), add_t))
+    story.append(section(jp("Additional Sounds  （小さい ア・イ・ウ・エ・オ）"), add_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Sample Katakana Words ---
@@ -112,11 +112,11 @@ def build():
     sw = W / 2
     sample_t = Table(sample_rows, colWidths=[sw, sw])
     sample_t.setStyle(TableStyle(TABLE_STYLE))
-    story.append(section_header("Sample Katakana Words", sample_t))
+    story.append(section("Sample Katakana Words", sample_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         "Same sounds as Hiragana — only the characters are different.",

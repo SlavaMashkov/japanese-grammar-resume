@@ -24,7 +24,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary 3.4 ---
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
 
     story.append(
@@ -85,7 +85,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: na-adjectives vs i-adjectives", tt))
+    story.append(section("Grammar: na-adjectives vs i-adjectives", tt))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- i-adjective conjugation ---
@@ -109,7 +109,7 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("i-adjective Conjugation  (example: 高い)"), it))
+    story.append(section(jp("i-adjective Conjugation  (example: 高い)"), it))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Exception: いい / かっこいい ---
@@ -135,6 +135,6 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Exception: いい and かっこいい  (conjugate from よい)"), et))
+    story.append(section(jp("Exception: いい and かっこいい  (conjugate from よい)"), et))
 
     return story

@@ -23,7 +23,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary ---
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
 
     story.append(
@@ -82,11 +82,11 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: State-of-Being Conjugation", gt))
+    story.append(section("Grammar: State-of-Being Conjugation", gt))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     notes = [
         jp("「だ」 makes the statement emphatic and declarative. More commonly used by men."),

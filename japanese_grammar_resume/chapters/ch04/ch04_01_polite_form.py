@@ -23,7 +23,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary ---
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
     story.append(
         vocab_two_col(
@@ -80,7 +80,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Verb Stem Rules", stem_t))
+    story.append(section("Grammar: Verb Stem Rules", stem_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: ます Conjugation ---
@@ -106,7 +106,7 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Grammar: ます Conjugation"), masu_t))
+    story.append(section(jp("Grammar: ます Conjugation"), masu_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: です Conjugation — i-adjective ---
@@ -132,7 +132,7 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Grammar: です Conjugation — i-adjective"), desu_i_t))
+    story.append(section(jp("Grammar: です Conjugation — i-adjective"), desu_i_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: です Conjugation — na-adj / noun ---
@@ -157,7 +157,7 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Grammar: です Conjugation — na-adj / noun"), desu_na_t))
+    story.append(section(jp("Grammar: です Conjugation — na-adj / noun"), desu_na_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: Formal Negative (ありません alternative) ---
@@ -183,11 +183,11 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Grammar: Formal Negative （ありません alternative）"), formal_t))
+    story.append(section(jp("Grammar: Formal Negative （ありません alternative）"), formal_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp("Polite speech (丁寧語) is used with strangers and social superiors."),

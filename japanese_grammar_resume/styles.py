@@ -72,7 +72,7 @@ def cell(text, bold=False, sz=8.5, col=CK, center=False):
     )
 
 
-def section_header(text, *content):
+def section(text, *content):
     """Section header bar. Pass optional *content flowables to wrap header + content
     in KeepTogether (prevents page break between header and its content)."""
     t = Table(

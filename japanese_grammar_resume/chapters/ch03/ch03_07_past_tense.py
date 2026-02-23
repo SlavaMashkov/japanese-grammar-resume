@@ -22,7 +22,7 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
     story.append(
         vocab_two_col(
@@ -70,7 +70,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Past Tense Conjugation Rules", prt))
+    story.append(section("Grammar: Past Tense Conjugation Rules", prt))
     story.append(Spacer(1, 3.5 * mm))
 
     pastneg = [
@@ -87,10 +87,10 @@ def build():
     col_pn = [65 * mm, W - 65 * mm]
     pnt = Table(pnrows, colWidths=col_pn)
     pnt.setStyle(TableStyle(TABLE_STYLE))
-    story.append(section_header("Past-Negative Tense  (all verb types)", pnt))
+    story.append(section("Past-Negative Tense  (all verb types)", pnt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp("Past-negative works the same for ALL verbs: negative form → drop い → add かった."),

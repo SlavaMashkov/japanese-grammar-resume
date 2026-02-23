@@ -22,7 +22,7 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
     story.append(
         vocab_two_col(
@@ -70,7 +70,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Relative Clauses as Adjectives", rct))
+    story.append(section("Grammar: Relative Clauses as Adjectives", rct))
     story.append(Spacer(1, 3.5 * mm))
 
     so = [
@@ -101,6 +101,6 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Japanese Sentence Order", sot))
+    story.append(section("Grammar: Japanese Sentence Order", sot))
 
     return story

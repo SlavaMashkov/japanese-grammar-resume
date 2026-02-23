@@ -23,7 +23,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- 1.1 The problem with conventional textbooks ---
-    story.append(section_header("1.1  The Problem with Conventional Textbooks"))
+    story.append(section("1.1  The Problem with Conventional Textbooks"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         "Textbooks try to teach Japanese through English — forcing English phrases into Japanese structure.",
@@ -35,7 +35,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 1.2 A Japanese guide to learning Japanese grammar ---
-    story.append(section_header("1.2  A Japanese Guide to Learning Japanese Grammar"))
+    story.append(section("1.2  A Japanese Guide to Learning Japanese Grammar"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         "This guide explains Japanese from a Japanese point of view — no artificial ties to English.",
@@ -48,7 +48,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 1.3 Suggestions ---
-    story.append(section_header("1.3  Suggestions"))
+    story.append(section("1.3  Suggestions"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         "Don't translate from English — if you don't already know how to say it, ask and learn from the answer.",

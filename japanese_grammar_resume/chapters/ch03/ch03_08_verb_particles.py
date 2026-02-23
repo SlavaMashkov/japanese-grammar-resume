@@ -22,7 +22,7 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
     story.append(
         vocab_two_col(
@@ -103,10 +103,10 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: The Four Verb Particles", vpt))
+    story.append(section("Grammar: The Four Verb Particles", vpt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp(

@@ -22,7 +22,7 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
     story.append(
         vocab_two_col(
@@ -95,7 +95,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Noun-related Particles", npt))
+    story.append(section("Grammar: Noun-related Particles", npt))
     story.append(Spacer(1, 3.5 * mm))
 
     no_data = [
@@ -126,10 +126,10 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Grammar: の as Nominalizer and Explanatory んだ"), not_))
+    story.append(section(jp("Grammar: の as Nominalizer and Explanatory んだ"), not_))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp("と lists everything; や/とか imply an incomplete list ('among other things')."),

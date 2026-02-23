@@ -22,7 +22,7 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
     story.append(
         vocab_two_col(
@@ -73,7 +73,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Transitive vs Intransitive", tit))
+    story.append(section("Grammar: Transitive vs Intransitive", tit))
     story.append(Spacer(1, 3.5 * mm))
 
     pairs_data = [
@@ -94,10 +94,10 @@ def build():
     hw_p = W / 4
     pt2 = Table(prows, colWidths=[hw_p] * 4)
     pt2.setStyle(TableStyle(TABLE_STYLE))
-    story.append(section_header("Transitive / Intransitive Pairs", pt2))
+    story.append(section("Transitive / Intransitive Pairs", pt2))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp("Intransitive verbs CANNOT take を. Use が or は instead: 電気がついた not 電気をついた."),

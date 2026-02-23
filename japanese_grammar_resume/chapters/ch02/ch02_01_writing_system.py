@@ -23,7 +23,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- 2.1 The Scripts ---
-    story.append(section_header("2.1  The Scripts"))
+    story.append(section("2.1  The Scripts"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp(
@@ -41,7 +41,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 2.2 Intonation ---
-    story.append(section_header("2.2  Intonation"))
+    story.append(section("2.2  Intonation"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp(

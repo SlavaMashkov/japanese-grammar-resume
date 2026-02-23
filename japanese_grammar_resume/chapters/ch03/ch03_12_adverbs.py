@@ -22,7 +22,7 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
     story.append(
         vocab_two_col(
@@ -81,7 +81,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Adjective → Adverb", at))
+    story.append(section("Grammar: Adjective → Adverb", at))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: Sentence-ending Particles ---
@@ -118,11 +118,11 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Grammar: Sentence-ending Particles  （ね、よ、よね）"), pt))
+    story.append(section(jp("Grammar: Sentence-ending Particles  （ね、よ、よね）"), pt))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp(

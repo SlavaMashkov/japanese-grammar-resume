@@ -23,7 +23,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- 2.5.1 What is Kanji? ---
-    story.append(section_header("What is Kanji?"))
+    story.append(section("What is Kanji?"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         "Nouns, verb stems, adjective stems, and many adverbs are written in Kanji.",
@@ -67,7 +67,7 @@ def build():
             ]
         )
     )
-    story.append(section_header(jp("Reading Kanji  （音読み・訓読み）"), read_t))
+    story.append(section(jp("Reading Kanji  （音読み・訓読み）"), read_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Sound Changes in Compounds ---
@@ -84,11 +84,11 @@ def build():
     chw = W / 2
     ch_t = Table(ch_rows, colWidths=[chw, chw])
     ch_t.setStyle(TableStyle(TABLE_STYLE))
-    story.append(section_header("Sound Changes in Compounds", ch_t))
+    story.append(section("Sound Changes in Compounds", ch_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         jp(

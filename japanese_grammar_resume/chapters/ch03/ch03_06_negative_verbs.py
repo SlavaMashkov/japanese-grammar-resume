@@ -46,7 +46,7 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Negative Conjugation Rules", nrt))
+    story.append(section("Grammar: Negative Conjugation Rules", nrt))
     story.append(Spacer(1, 3.5 * mm))
 
     neg_ex = [
@@ -68,6 +68,6 @@ def build():
     hw6 = W / 3
     net = Table(nerows, colWidths=[hw6, hw6, hw6])
     net.setStyle(TableStyle(TABLE_STYLE))
-    story.append(section_header("Negative Conjugation Examples", net))
+    story.append(section("Negative Conjugation Examples", net))
 
     return story

@@ -22,7 +22,7 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section_header("Vocabulary"))
+    story.append(section("Vocabulary"))
     story.append(Spacer(1, 1 * mm))
     story.append(
         vocab_two_col(
@@ -83,10 +83,10 @@ def build():
             ]
         )
     )
-    story.append(section_header("Grammar: Verb Types", vtt))
+    story.append(section("Grammar: Verb Types", vtt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Notes"))
+    story.append(section("Notes"))
     story.append(Spacer(1, 1 * mm))
     for n in [
         "Verbs always come at the end of a clause in Japanese.",
