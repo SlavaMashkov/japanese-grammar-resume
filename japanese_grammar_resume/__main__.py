@@ -3,9 +3,32 @@ import importlib
 import re
 from pathlib import Path
 
+from reportlab.platypus import Paragraph
+
 from .styles import *
 
+_RE_SUBCHAPTER = re.compile(r"^\d+\.\d+")
+
 CHAPTERS_DIR = Path(__file__).resolve().parent / "chapters"
+
+
+class BookmarkedDoc(SimpleDocTemplate):
+    """SimpleDocTemplate subclass that auto-generates PDF bookmarks from chapter
+    titles (level 0) and sub-chapter titles (level 1)."""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._bm_seq = 0
+
+    def afterFlowable(self, flowable):
+        if not isinstance(flowable, Paragraph) or flowable.style.name != title_s.name:
+            return
+        key = f"bm{self._bm_seq}"
+        self._bm_seq += 1
+        text = re.sub(r"<[^>]+>", "", flowable.text)
+        level = 1 if _RE_SUBCHAPTER.match(text) else 0
+        self.canv.bookmarkPage(key)
+        self.canv.addOutlineEntry(text, key, level=level, closed=False)
 
 
 def _discover_chapters() -> list:
@@ -32,7 +55,7 @@ def main():
 
     output_path = os.path.join(args.output_dir, "japanese_summary.pdf")
     os.makedirs(args.output_dir, exist_ok=True)
-    doc = SimpleDocTemplate(
+    doc = BookmarkedDoc(
         output_path,
         pagesize=A4,
         leftMargin=15 * mm,
