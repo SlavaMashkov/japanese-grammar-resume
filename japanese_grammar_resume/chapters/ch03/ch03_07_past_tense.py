@@ -43,9 +43,6 @@ def build():
     )
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Grammar: Past Tense Conjugation Rules"))
-    story.append(Spacer(1, 1 * mm))
-
     past_rules = [
         ["Type", "Rule", "Example"],
         ["ru-verb", "Drop る, add た", "食べる → 食べた"],
@@ -73,11 +70,9 @@ def build():
             ]
         )
     )
-    story.append(prt)
+    story.append(section_header("Grammar: Past Tense Conjugation Rules", prt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Past-Negative Tense  (all verb types)"))
-    story.append(Spacer(1, 1 * mm))
     pastneg = [
         ["Rule", "Examples"],
         [
@@ -92,7 +87,7 @@ def build():
     col_pn = [65 * mm, W - 65 * mm]
     pnt = Table(pnrows, colWidths=col_pn)
     pnt.setStyle(TableStyle(TABLE_STYLE))
-    story.append(pnt)
+    story.append(section_header("Past-Negative Tense  (all verb types)", pnt))
     story.append(Spacer(1, 3.5 * mm))
 
     story.append(section_header("Notes"))

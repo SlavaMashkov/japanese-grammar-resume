@@ -22,8 +22,6 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section_header("Grammar: Negative Conjugation Rules"))
-    story.append(Spacer(1, 1 * mm))
     neg_rules = [
         ["Type", "Rule", "Example"],
         ["ru-verb", "Drop る, add ない", "食べる → 食べない"],
@@ -48,11 +46,9 @@ def build():
             ]
         )
     )
-    story.append(nrt)
+    story.append(section_header("Grammar: Negative Conjugation Rules", nrt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Negative Conjugation Examples"))
-    story.append(Spacer(1, 1 * mm))
     neg_ex = [
         ["ru-verb", "u-verb", "exception"],
         ["見る → 見ない", "話す → 話さない", "する → しない"],
@@ -72,6 +68,6 @@ def build():
     hw6 = W / 3
     net = Table(nerows, colWidths=[hw6, hw6, hw6])
     net.setStyle(TableStyle(TABLE_STYLE))
-    story.append(net)
+    story.append(section_header("Negative Conjugation Examples", net))
 
     return story

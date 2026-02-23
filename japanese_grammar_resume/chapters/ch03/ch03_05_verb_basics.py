@@ -58,8 +58,6 @@ def build():
     )
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Grammar: Verb Types"))
-    story.append(Spacer(1, 1 * mm))
     vtype = [
         ["Type", "Rule", "Examples"],
         ["ru-verb", "Ends in る, preceded by /i/ or /e/ vowel sound.", "食べる、見る、寝る、起きる、いる"],
@@ -85,7 +83,7 @@ def build():
             ]
         )
     )
-    story.append(vtt)
+    story.append(section_header("Grammar: Verb Types", vtt))
     story.append(Spacer(1, 3.5 * mm))
 
     story.append(section_header("Notes"))

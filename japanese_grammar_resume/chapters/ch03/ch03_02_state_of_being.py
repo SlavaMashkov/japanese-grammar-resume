@@ -46,9 +46,6 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Conjugation Table ---
-    story.append(section_header("Grammar: State-of-Being Conjugation"))
-    story.append(Spacer(1, 1 * mm))
-
     gram = [
         ["", "Affirmative (+)", "Negative (-)"],
         [
@@ -85,7 +82,7 @@ def build():
             ]
         )
     )
-    story.append(gt)
+    story.append(section_header("Grammar: State-of-Being Conjugation", gt))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---

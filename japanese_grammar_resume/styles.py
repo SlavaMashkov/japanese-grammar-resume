@@ -72,7 +72,9 @@ def cell(text, bold=False, sz=8.5, col=CK, center=False):
     )
 
 
-def section_header(text):
+def section_header(text, *content):
+    """Section header bar. Pass optional *content flowables to wrap header + content
+    in KeepTogether (prevents page break between header and its content)."""
     t = Table(
         [[Paragraph(jp(text), section_s)]],
         colWidths=[W],
@@ -85,7 +87,9 @@ def section_header(text):
             ]
         ),
     )
-    return t
+    if not content:
+        return t
+    return KeepTogether([t, Spacer(1, 1 * mm), *content])
 
 
 TABLE_STYLE = [

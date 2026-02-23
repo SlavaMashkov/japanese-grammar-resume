@@ -53,9 +53,6 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: Adjective → Adverb ---
-    story.append(section_header("Grammar: Adjective → Adverb"))
-    story.append(Spacer(1, 1 * mm))
-
     adv = [
         ["Type", "Rule", "Example"],
         [
@@ -84,13 +81,10 @@ def build():
             ]
         )
     )
-    story.append(at)
+    story.append(section_header("Grammar: Adjective → Adverb", at))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: Sentence-ending Particles ---
-    story.append(section_header(jp("Grammar: Sentence-ending Particles  （ね、よ、よね）")))
-    story.append(Spacer(1, 1 * mm))
-
     particles = [
         ["Particle", "Function", "Example"],
         [
@@ -124,7 +118,7 @@ def build():
             ]
         )
     )
-    story.append(pt)
+    story.append(section_header(jp("Grammar: Sentence-ending Particles  （ね、よ、よね）"), pt))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---

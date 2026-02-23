@@ -61,8 +61,6 @@ def build():
     )
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Grammar: The Four Verb Particles"))
-    story.append(Spacer(1, 1 * mm))
     vp = [
         ["Particle", "Name", "Function", "Example"],
         [
@@ -105,7 +103,7 @@ def build():
             ]
         )
     )
-    story.append(vpt)
+    story.append(section_header("Grammar: The Four Verb Particles", vpt))
     story.append(Spacer(1, 3.5 * mm))
 
     story.append(section_header("Notes"))

@@ -35,9 +35,6 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 2.5.3 Reading Kanji ---
-    story.append(section_header(jp("Reading Kanji  （音読み・訓読み）")))
-    story.append(Spacer(1, 1 * mm))
-
     readings = [
         ["Reading", "Origin", "When used", "Example"],
         [
@@ -70,13 +67,10 @@ def build():
             ]
         )
     )
-    story.append(read_t)
+    story.append(section_header(jp("Reading Kanji  （音読み・訓読み）"), read_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Sound Changes in Compounds ---
-    story.append(section_header("Sound Changes in Compounds"))
-    story.append(Spacer(1, 1 * mm))
-
     changes = [
         ["Pattern", "Example"],
         ["/h/ → /b/ or /p/", "一本 (いっぽん)"],
@@ -90,7 +84,7 @@ def build():
     chw = W / 2
     ch_t = Table(ch_rows, colWidths=[chw, chw])
     ch_t.setStyle(TableStyle(TABLE_STYLE))
-    story.append(ch_t)
+    story.append(section_header("Sound Changes in Compounds", ch_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---

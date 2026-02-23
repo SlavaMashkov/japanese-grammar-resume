@@ -41,9 +41,6 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Particles Table ---
-    story.append(section_header("Grammar: The Three Particles"))
-    story.append(Spacer(1, 1 * mm))
-
     particles = [
         ["Particle", "Name", "Function", "Example"],
         [
@@ -81,7 +78,7 @@ def build():
             ]
         )
     )
-    story.append(pt)
+    story.append(section_header("Grammar: The Three Particles", pt))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- は vs が comparison ---

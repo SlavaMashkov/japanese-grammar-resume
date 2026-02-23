@@ -23,9 +23,6 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Basic Kana ---
-    story.append(section_header("Basic Kana"))
-    story.append(Spacer(1, 1 * mm))
-
     lw = 14 * mm
     kw = (W - lw) / 5
 
@@ -60,13 +57,10 @@ def build():
             ]
         )
     )
-    story.append(hira_t)
+    story.append(section_header("Basic Kana", hira_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Voiced Sounds (Dakuten / Handakuten) ---
-    story.append(section_header(jp("Voiced Sounds  （濁点 ゛・半濁点 ゜）")))
-    story.append(Spacer(1, 1 * mm))
-
     voiced = [
         ["", "a", "i", "u", "e", "o"],
         ["g", "が", "ぎ", "ぐ", "げ", "ご"],
@@ -92,13 +86,10 @@ def build():
             ]
         )
     )
-    story.append(voiced_t)
+    story.append(section_header(jp("Voiced Sounds  （濁点 ゛・半濁点 ゜）"), voiced_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Combinations (Small や、ゆ、よ) ---
-    story.append(section_header(jp("Combinations  （拗音 — 小さい や・ゆ・よ）")))
-    story.append(Spacer(1, 1 * mm))
-
     clw = 14 * mm
     ckw = (W - clw) / 3
 
@@ -133,7 +124,7 @@ def build():
             ]
         )
     )
-    story.append(combo_t)
+    story.append(section_header(jp("Combinations  （拗音 — 小さい や・ゆ・よ）"), combo_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---

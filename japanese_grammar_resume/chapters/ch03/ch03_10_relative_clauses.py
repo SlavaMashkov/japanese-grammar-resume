@@ -45,8 +45,6 @@ def build():
     )
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Grammar: Relative Clauses as Adjectives"))
-    story.append(Spacer(1, 1 * mm))
     rc = [
         ["Form", "Can modify noun?", "Example"],
         ["Verb (non-past)", "Yes", "いつも勉強する人 — person who always studies"],
@@ -72,11 +70,9 @@ def build():
             ]
         )
     )
-    story.append(rct)
+    story.append(section_header("Grammar: Relative Clauses as Adjectives", rct))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Grammar: Japanese Sentence Order"))
-    story.append(Spacer(1, 1 * mm))
     so = [
         ["Rule", "Notes"],
         ["The verb must come at the end.", "This is the only strict rule."],
@@ -105,6 +101,6 @@ def build():
             ]
         )
     )
-    story.append(sot)
+    story.append(section_header("Grammar: Japanese Sentence Order", sot))
 
     return story

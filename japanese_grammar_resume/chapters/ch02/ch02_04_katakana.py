@@ -23,9 +23,6 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Basic Kana ---
-    story.append(section_header("Basic Kana"))
-    story.append(Spacer(1, 1 * mm))
-
     lw = 14 * mm
     kw = (W - lw) / 5
 
@@ -60,13 +57,10 @@ def build():
             ]
         )
     )
-    story.append(kata_t)
+    story.append(section_header("Basic Kana", kata_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Additional Sounds (Small ア、イ、ウ、エ、オ) ---
-    story.append(section_header(jp("Additional Sounds  （小さい ア・イ・ウ・エ・オ）")))
-    story.append(Spacer(1, 1 * mm))
-
     add = [
         ["", "sh", "j", "t", "d", "ch", "f", "w", "v"],
         ["a", "シャ", "ジャ", "タ", "ダ", "チャ", "ファ", "ワ", "ヴァ"],
@@ -94,13 +88,10 @@ def build():
             ]
         )
     )
-    story.append(add_t)
+    story.append(section_header(jp("Additional Sounds  （小さい ア・イ・ウ・エ・オ）"), add_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Sample Katakana Words ---
-    story.append(section_header("Sample Katakana Words"))
-    story.append(Spacer(1, 1 * mm))
-
     samples = [
         ["English", "Japanese"],
         ["America", "アメリカ"],
@@ -121,7 +112,7 @@ def build():
     sw = W / 2
     sample_t = Table(sample_rows, colWidths=[sw, sw])
     sample_t.setStyle(TableStyle(TABLE_STYLE))
-    story.append(sample_t)
+    story.append(section_header("Sample Katakana Words", sample_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---

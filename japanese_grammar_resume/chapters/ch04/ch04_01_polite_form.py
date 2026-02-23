@@ -60,26 +60,10 @@ def build():
     # --- Grammar: Verb Stem Rules ---
     stem_data = [
         ["Type", "Rule", "Example"],
-        [
-            "ru-verb",
-            "Remove る",
-            "食べる → 食べ",
-        ],
-        [
-            "u-verb",
-            "Change /u/ vowel to /i/ vowel",
-            "泳ぐ → 泳ぎ",
-        ],
-        [
-            "する",
-            "Exception → し",
-            "する → し",
-        ],
-        [
-            "くる",
-            "Exception → き",
-            "来る → き",
-        ],
+        ["ru-verb", "Remove る", "食べる → 食べ"],
+        ["u-verb", "Change /u/ vowel to /i/ vowel", "泳ぐ → 泳ぎ"],
+        ["する", "Exception → し", "する → し"],
+        ["くる", "Exception → き", "来る → き"],
     ]
     stem_rows = [
         [cell(c, bold=(ri == 0), center=(ri == 0 or ci == 0), sz=8) for ci, c in enumerate(row)]
@@ -96,7 +80,7 @@ def build():
             ]
         )
     )
-    story.append(KeepTogether([section_header("Grammar: Verb Stem Rules"), Spacer(1, 1 * mm), stem_t]))
+    story.append(section_header("Grammar: Verb Stem Rules", stem_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: ます Conjugation ---
@@ -122,7 +106,7 @@ def build():
             ]
         )
     )
-    story.append(KeepTogether([section_header(jp("Grammar: ます Conjugation")), Spacer(1, 1 * mm), masu_t]))
+    story.append(section_header(jp("Grammar: ます Conjugation"), masu_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: です Conjugation — i-adjective ---
@@ -148,15 +132,7 @@ def build():
             ]
         )
     )
-    story.append(
-        KeepTogether(
-            [
-                section_header(jp("Grammar: です Conjugation — i-adjective")),
-                Spacer(1, 1 * mm),
-                desu_i_t,
-            ]
-        )
-    )
+    story.append(section_header(jp("Grammar: です Conjugation — i-adjective"), desu_i_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: です Conjugation — na-adj / noun ---
@@ -181,15 +157,7 @@ def build():
             ]
         )
     )
-    story.append(
-        KeepTogether(
-            [
-                section_header(jp("Grammar: です Conjugation — na-adj / noun")),
-                Spacer(1, 1 * mm),
-                desu_na_t,
-            ]
-        )
-    )
+    story.append(section_header(jp("Grammar: です Conjugation — na-adj / noun"), desu_na_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Grammar: Formal Negative (ありません alternative) ---
@@ -215,15 +183,7 @@ def build():
             ]
         )
     )
-    story.append(
-        KeepTogether(
-            [
-                section_header(jp("Grammar: Formal Negative （ありません alternative）")),
-                Spacer(1, 1 * mm),
-                formal_t,
-            ]
-        )
-    )
+    story.append(section_header(jp("Grammar: Formal Negative （ありません alternative）"), formal_t))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---

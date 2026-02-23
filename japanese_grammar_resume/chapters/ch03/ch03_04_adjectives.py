@@ -54,9 +54,6 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Adjective Types ---
-    story.append(section_header("Grammar: na-adjectives vs i-adjectives"))
-    story.append(Spacer(1, 1 * mm))
-
     types = [
         ["", "na-adjective", "i-adjective"],
         ["Identify by", "Does NOT end in い (usually).\nExceptions: きれい、嫌い", "Always ends in い"],
@@ -88,13 +85,10 @@ def build():
             ]
         )
     )
-    story.append(tt)
+    story.append(section_header("Grammar: na-adjectives vs i-adjectives", tt))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- i-adjective conjugation ---
-    story.append(section_header(jp("i-adjective Conjugation  (example: 高い)")))
-    story.append(Spacer(1, 1 * mm))
-
     iconj = [
         ["", "Affirmative", "Negative"],
         ["Non-Past", "高い", "高い → 高く + ない  =  高くない"],
@@ -115,13 +109,10 @@ def build():
             ]
         )
     )
-    story.append(it)
+    story.append(section_header(jp("i-adjective Conjugation  (example: 高い)"), it))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Exception: いい / かっこいい ---
-    story.append(section_header(jp("Exception: いい and かっこいい  (conjugate from よい)")))
-    story.append(Spacer(1, 1 * mm))
-
     exc = [
         ["", "Affirmative", "Negative"],
         ["Non-Past", "いい", "よくない"],
@@ -144,6 +135,6 @@ def build():
             ]
         )
     )
-    story.append(et)
+    story.append(section_header(jp("Exception: いい and かっこいい  (conjugate from よい)"), et))
 
     return story

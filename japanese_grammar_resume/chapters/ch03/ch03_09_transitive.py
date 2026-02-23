@@ -52,8 +52,6 @@ def build():
     )
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Grammar: Transitive vs Intransitive"))
-    story.append(Spacer(1, 1 * mm))
     ti_intro = [
         ["", "Transitive", "Intransitive"],
         ["Agent", "Active agent performs action", "No direct agent — event just happens"],
@@ -75,11 +73,9 @@ def build():
             ]
         )
     )
-    story.append(tit)
+    story.append(section_header("Grammar: Transitive vs Intransitive", tit))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Transitive / Intransitive Pairs"))
-    story.append(Spacer(1, 1 * mm))
     pairs_data = [
         ["Transitive (を)", "Meaning", "Intransitive (が)", "Meaning"],
         ["落とす", "to drop", "落ちる", "to fall"],
@@ -98,7 +94,7 @@ def build():
     hw_p = W / 4
     pt2 = Table(prows, colWidths=[hw_p] * 4)
     pt2.setStyle(TableStyle(TABLE_STYLE))
-    story.append(pt2)
+    story.append(section_header("Transitive / Intransitive Pairs", pt2))
     story.append(Spacer(1, 3.5 * mm))
 
     story.append(section_header("Notes"))

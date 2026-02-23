@@ -53,8 +53,6 @@ def build():
     )
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header("Grammar: Noun-related Particles"))
-    story.append(Spacer(1, 1 * mm))
     np_data = [
         ["Particle", "Meaning", "Usage", "Example"],
         [
@@ -97,11 +95,9 @@ def build():
             ]
         )
     )
-    story.append(npt)
+    story.append(section_header("Grammar: Noun-related Particles", npt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section_header(jp("Grammar: の as Nominalizer and Explanatory んだ")))
-    story.append(Spacer(1, 1 * mm))
     no_data = [
         ["Usage", "Rule", "Example"],
         [
@@ -130,7 +126,7 @@ def build():
             ]
         )
     )
-    story.append(not_)
+    story.append(section_header(jp("Grammar: の as Nominalizer and Explanatory んだ"), not_))
     story.append(Spacer(1, 3.5 * mm))
 
     story.append(section_header("Notes"))
