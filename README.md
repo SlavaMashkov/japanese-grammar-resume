@@ -29,10 +29,13 @@ bash generate-pdf.sh
 
 Output: `output/japanese_summary.pdf`
 
-You can specify a different output directory:
+You can specify a different output directory or file:
 
 ```bash
 bash generate-pdf.sh -o ~/Desktop
+bash generate-pdf.sh -o ~/Desktop/grammar.pdf
+# overwrite existing file:
+bash generate-pdf.sh -o ~/Desktop/grammar.pdf -w
 ```
 
 ## Requirements
@@ -53,37 +56,6 @@ To run manually:
 ```bash
 .venv/bin/ruff format japanese_grammar_resume/ scripts/   # format
 .venv/bin/ruff check japanese_grammar_resume/ scripts/    # lint
-```
-
-## Project Structure
-
-```txt
-japanese_grammar_resume/        Python package
-  __main__.py                   entry point: auto-discovers chapters, builds PDF
-  styles.py                     fonts, styles, helpers
-  vocab_registry.json           vocabulary (single source of truth)
-  chapters/                     one subdir per part, auto-discovered
-    ch01/                       Part 1: Introduction
-      ch01_00_introduction.py
-      ch01_01_problem.py
-      ...
-    ch02/                       Part 2: The Writing System
-      ch02_00_writing_system.py
-      ch02_01_scripts.py
-      ...
-    ch03/                       Part 3: Basic Grammar
-      ch03_00_basic_grammar.py
-      ch03_01_basic_grammatical_structures.py
-      ch03_02_state_of_being.py
-      ...
-    ch04/                       Part 4: Essential Grammar
-      ch04_00_essential_grammar.py
-      ch04_01_polite_form.py
-      ...
-scripts/
-  sync_vocab_registry.py        vocabulary validation
-fonts/                          NotoSansJP-Light.ttf
-output/                         generated PDF (in .gitignore)
 ```
 
 ## Vocabulary (`vocab_registry.json`)

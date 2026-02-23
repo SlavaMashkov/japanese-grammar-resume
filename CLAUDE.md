@@ -64,8 +64,12 @@ japanese_grammar_resume/           — Python package
 bash generate-pdf.sh
 # or directly:
 .venv/bin/python3 -m japanese_grammar_resume
-# with custom output directory:
+# custom output directory:
 bash generate-pdf.sh -o ~/Desktop
+# custom output file:
+bash generate-pdf.sh -o ~/Desktop/grammar.pdf
+# overwrite existing file:
+bash generate-pdf.sh -o ~/Desktop/grammar.pdf -w
 ```
 
 Output: `output/japanese_summary.pdf` (default)

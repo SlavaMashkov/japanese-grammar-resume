@@ -45,16 +45,31 @@ def _discover_chapters() -> list:
 
 def main():
     parser = argparse.ArgumentParser(description="Generate Japanese grammar summary PDF")
+    default_output = os.path.join(BASE_DIR, "output")
     parser.add_argument(
         "-o",
-        "--output-dir",
-        default=os.path.join(BASE_DIR, "output"),
-        help="Output directory (default: output/)",
+        "--output",
+        default=default_output,
+        help="Output file (.pdf) or directory (default: output/)",
+    )
+    parser.add_argument(
+        "-w",
+        "--overwrite",
+        action="store_true",
+        help="Overwrite output file if it already exists",
     )
     args = parser.parse_args()
 
-    output_path = os.path.join(args.output_dir, "japanese_summary.pdf")
-    os.makedirs(args.output_dir, exist_ok=True)
+    custom_output = args.output != default_output
+    if args.output.endswith(".pdf"):
+        output_path = args.output
+    else:
+        output_path = os.path.join(args.output, "japanese_summary.pdf")
+
+    if custom_output and os.path.exists(output_path) and not args.overwrite:
+        parser.error(f"file already exists: {output_path}\nUse -w to overwrite.")
+
+    os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
     doc = BookmarkedDoc(
         output_path,
         pagesize=A4,
