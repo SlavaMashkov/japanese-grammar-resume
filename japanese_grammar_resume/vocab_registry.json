@@ -2246,5 +2246,381 @@
     ],
     "meaning": "to precipitate  (u-verb)",
     "chapter": "ch03_12"
+  },
+  "丁寧語": {
+    "pairs": [
+      [
+        "てい",
+        "丁"
+      ],
+      [
+        "ねい",
+        "寧"
+      ],
+      [
+        "ご",
+        "語"
+      ]
+    ],
+    "meaning": "polite language",
+    "chapter": "ch04_01"
+  },
+  "尊敬語": {
+    "pairs": [
+      [
+        "そん",
+        "尊"
+      ],
+      [
+        "けい",
+        "敬"
+      ],
+      [
+        "ご",
+        "語"
+      ]
+    ],
+    "meaning": "honorific language",
+    "chapter": "ch04_01"
+  },
+  "謙譲語": {
+    "pairs": [
+      [
+        "けん",
+        "謙"
+      ],
+      [
+        "じょう",
+        "譲"
+      ],
+      [
+        "ご",
+        "語"
+      ]
+    ],
+    "meaning": "humble language",
+    "chapter": "ch04_01"
+  },
+  "はい": {
+    "pairs": [
+      [
+        "",
+        "は"
+      ],
+      [
+        "",
+        "い"
+      ]
+    ],
+    "meaning": "yes (polite)",
+    "chapter": "ch04_01"
+  },
+  "いいえ": {
+    "pairs": [
+      [
+        "",
+        "い"
+      ],
+      [
+        "",
+        "い"
+      ],
+      [
+        "",
+        "え"
+      ]
+    ],
+    "meaning": "no (polite)",
+    "chapter": "ch04_01"
+  },
+  "怒る": {
+    "pairs": [
+      [
+        "おこ",
+        "怒"
+      ],
+      [
+        "",
+        "る"
+      ]
+    ],
+    "meaning": "to get angry  (u-verb)",
+    "chapter": "ch04_01"
+  },
+  "鉄拳": {
+    "pairs": [
+      [
+        "てっ",
+        "鉄"
+      ],
+      [
+        "けん",
+        "拳"
+      ]
+    ],
+    "meaning": "fist",
+    "chapter": "ch04_01"
+  },
+  "休み": {
+    "pairs": [
+      [
+        "やす",
+        "休"
+      ],
+      [
+        "",
+        "み"
+      ]
+    ],
+    "meaning": "rest; vacation",
+    "chapter": "ch04_01"
+  },
+  "楽しむ": {
+    "pairs": [
+      [
+        "たの",
+        "楽"
+      ],
+      [
+        "",
+        "し"
+      ],
+      [
+        "",
+        "む"
+      ]
+    ],
+    "meaning": "to enjoy  (u-verb)",
+    "chapter": "ch04_01"
+  },
+  "走り出す": {
+    "pairs": [
+      [
+        "はし",
+        "走"
+      ],
+      [
+        "",
+        "り"
+      ],
+      [
+        "だ",
+        "出"
+      ],
+      [
+        "",
+        "す"
+      ]
+    ],
+    "meaning": "to break into a run  (u-verb)",
+    "chapter": "ch04_01"
+  },
+  "替える": {
+    "pairs": [
+      [
+        "か",
+        "替"
+      ],
+      [
+        "",
+        "え"
+      ],
+      [
+        "",
+        "る"
+      ]
+    ],
+    "meaning": "to switch  (ru-verb)",
+    "chapter": "ch04_01"
+  },
+  "着替える": {
+    "pairs": [
+      [
+        "き",
+        "着"
+      ],
+      [
+        "が",
+        "替"
+      ],
+      [
+        "",
+        "え"
+      ],
+      [
+        "",
+        "る"
+      ]
+    ],
+    "meaning": "to change clothes  (ru-verb)",
+    "chapter": "ch04_01"
+  },
+  "加える": {
+    "pairs": [
+      [
+        "くわ",
+        "加"
+      ],
+      [
+        "",
+        "え"
+      ],
+      [
+        "",
+        "る"
+      ]
+    ],
+    "meaning": "to add  (ru-verb)",
+    "chapter": "ch04_01"
+  },
+  "付け加える": {
+    "pairs": [
+      [
+        "つ",
+        "付"
+      ],
+      [
+        "",
+        "け"
+      ],
+      [
+        "くわ",
+        "加"
+      ],
+      [
+        "",
+        "え"
+      ],
+      [
+        "",
+        "る"
+      ]
+    ],
+    "meaning": "to add one thing to another  (ru-verb)",
+    "chapter": "ch04_01"
+  },
+  "言う": {
+    "pairs": [
+      [
+        "い",
+        "言"
+      ],
+      [
+        "",
+        "う"
+      ]
+    ],
+    "meaning": "to say  (u-verb)",
+    "chapter": "ch04_01"
+  },
+  "言い出す": {
+    "pairs": [
+      [
+        "い",
+        "言"
+      ],
+      [
+        "",
+        "い"
+      ],
+      [
+        "だ",
+        "出"
+      ],
+      [
+        "",
+        "す"
+      ]
+    ],
+    "meaning": "to start talking  (u-verb)",
+    "chapter": "ch04_01"
+  },
+  "子犬": {
+    "pairs": [
+      [
+        "こ",
+        "子"
+      ],
+      [
+        "いぬ",
+        "犬"
+      ]
+    ],
+    "meaning": "puppy",
+    "chapter": "ch04_01"
+  },
+  "とても": {
+    "pairs": [
+      [
+        "",
+        "と"
+      ],
+      [
+        "",
+        "て"
+      ],
+      [
+        "",
+        "も"
+      ]
+    ],
+    "meaning": "very",
+    "chapter": "ch04_01"
+  },
+  "昨日": {
+    "pairs": [
+      [
+        "きのう",
+        "昨日"
+      ]
+    ],
+    "meaning": "yesterday",
+    "chapter": "ch04_01"
+  },
+  "その": {
+    "pairs": [
+      [
+        "",
+        "そ"
+      ],
+      [
+        "",
+        "の"
+      ]
+    ],
+    "meaning": "that (abbr of それの)",
+    "chapter": "ch04_01"
+  },
+  "思う": {
+    "pairs": [
+      [
+        "おも",
+        "思"
+      ],
+      [
+        "",
+        "う"
+      ]
+    ],
+    "meaning": "to think  (u-verb)",
+    "chapter": "ch04_01"
+  },
+  "答える": {
+    "pairs": [
+      [
+        "こた",
+        "答"
+      ],
+      [
+        "",
+        "え"
+      ],
+      [
+        "",
+        "る"
+      ]
+    ],
+    "meaning": "to answer  (ru-verb)",
+    "chapter": "ch04_01"
   }
 }
