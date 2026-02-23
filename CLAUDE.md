@@ -56,6 +56,7 @@ japanese_grammar_resume/           — Python package
       ch04_02_addressing_people.py
       ch04_03_question_marker.py
       ch04_04_compound_sentences.py
+      ch04_05_other_te_form.py
 ```
 
 ## Running

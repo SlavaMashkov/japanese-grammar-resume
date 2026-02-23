@@ -1263,5 +1263,160 @@
     "pairs": [["よ", "読"], ["", "む"]],
     "meaning": "to read  (u-verb)",
     "chapter": "ch04_04"
+  },
+  "教科書": {
+    "pairs": [["きょう", "教"], ["か", "科"], ["しょ", "書"]],
+    "meaning": "textbook",
+    "chapter": "ch04_05"
+  },
+  "話": {
+    "pairs": [["はなし", "話"]],
+    "meaning": "story",
+    "chapter": "ch04_05"
+  },
+  "歌": {
+    "pairs": [["うた", "歌"]],
+    "meaning": "song",
+    "chapter": "ch04_05"
+  },
+  "道": {
+    "pairs": [["みち", "道"]],
+    "meaning": "road",
+    "chapter": "ch04_05"
+  },
+  "もう": {
+    "pairs": [["", "も"], ["", "う"]],
+    "meaning": "already",
+    "chapter": "ch04_05"
+  },
+  "先": {
+    "pairs": [["さき", "先"]],
+    "meaning": "before; ahead",
+    "chapter": "ch04_05"
+  },
+  "美恵": {
+    "pairs": [["み", "美"], ["え", "恵"]],
+    "meaning": "Mie (first name)",
+    "chapter": "ch04_05"
+  },
+  "準備": {
+    "pairs": [["じゅん", "準"], ["び", "備"]],
+    "meaning": "preparations",
+    "chapter": "ch04_05"
+  },
+  "旅行": {
+    "pairs": [["りょ", "旅"], ["こう", "行"]],
+    "meaning": "travel",
+    "chapter": "ch04_05"
+  },
+  "計画": {
+    "pairs": [["けい", "計"], ["かく", "画"]],
+    "meaning": "plans",
+    "chapter": "ch04_05"
+  },
+  "終わる": {
+    "pairs": [["お", "終"], ["", "わ"], ["", "る"]],
+    "meaning": "to end  (u-verb)",
+    "chapter": "ch04_05"
+  },
+  "切符": {
+    "pairs": [["きっ", "切"], ["ぷ", "符"]],
+    "meaning": "ticket",
+    "chapter": "ch04_05"
+  },
+  "ホテル": {
+    "pairs": [["", "ホ"], ["", "テ"], ["", "ル"]],
+    "meaning": "hotel",
+    "chapter": "ch04_05"
+  },
+  "予約": {
+    "pairs": [["よ", "予"], ["やく", "約"]],
+    "meaning": "reservation",
+    "chapter": "ch04_05"
+  },
+  "作る": {
+    "pairs": [["つく", "作"], ["", "る"]],
+    "meaning": "to make  (u-verb)",
+    "chapter": "ch04_05"
+  },
+  "電池": {
+    "pairs": [["でん", "電"], ["ち", "池"]],
+    "meaning": "battery",
+    "chapter": "ch04_05"
+  },
+  "えんぴつ": {
+    "pairs": [["", "え"], ["", "ん"], ["", "ぴ"], ["", "つ"]],
+    "meaning": "pencil",
+    "chapter": "ch04_05"
+  },
+  "駅": {
+    "pairs": [["えき", "駅"]],
+    "meaning": "station",
+    "chapter": "ch04_05"
+  },
+  "方": {
+    "pairs": [["ほう", "方"]],
+    "meaning": "direction; way",
+    "chapter": "ch04_05"
+  },
+  "冬": {
+    "pairs": [["ふゆ", "冬"]],
+    "meaning": "winter",
+    "chapter": "ch04_05"
+  },
+  "コート": {
+    "pairs": [["", "コ"], ["", "ー"], ["", "ト"]],
+    "meaning": "coat",
+    "chapter": "ch04_05"
+  },
+  "増える": {
+    "pairs": [["ふ", "増"], ["", "え"], ["", "る"]],
+    "meaning": "to increase  (ru-verb)",
+    "chapter": "ch04_05"
+  },
+  "一生懸命": {
+    "pairs": [["いっ", "一"], ["しょう", "生"], ["けん", "懸"], ["めい", "命"]],
+    "meaning": "with all one's might",
+    "chapter": "ch04_05"
+  },
+  "頑張る": {
+    "pairs": [["がん", "頑"], ["ば", "張"], ["", "る"]],
+    "meaning": "to try one's best  (u-verb)",
+    "chapter": "ch04_05"
+  },
+  "色々": {
+    "pairs": [["いろ", "色"], ["いろ", "々"]],
+    "meaning": "various  (na-adj)",
+    "chapter": "ch04_05"
+  },
+  "付き合う": {
+    "pairs": [["つ", "付"], ["", "き"], ["あ", "合"], ["", "う"]],
+    "meaning": "to go out with  (u-verb)",
+    "chapter": "ch04_05"
+  },
+  "見つかる": {
+    "pairs": [["み", "見"], ["", "つ"], ["", "か"], ["", "る"]],
+    "meaning": "to be found  (u-verb)",
+    "chapter": "ch04_05"
+  },
+  "ずっと": {
+    "pairs": [["", "ず"], ["", "っ"], ["", "と"]],
+    "meaning": "long; far",
+    "chapter": "ch04_05"
+  },
+  "前": {
+    "pairs": [["まえ", "前"]],
+    "meaning": "front; before",
+    "chapter": "ch04_05"
+  },
+  "結局": {
+    "pairs": [["けっ", "結"], ["きょく", "局"]],
+    "meaning": "eventually",
+    "chapter": "ch04_05"
+  },
+  "やめる": {
+    "pairs": [["", "や"], ["", "め"], ["", "る"]],
+    "meaning": "to stop; to quit  (ru-verb)",
+    "chapter": "ch04_05"
   }
 }
