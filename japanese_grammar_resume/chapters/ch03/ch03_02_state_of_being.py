@@ -86,7 +86,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("「だ」 makes the statement emphatic and declarative. More commonly used by men."),
         jp("Without 「だ」, state-of-being is still implied from context (very common in casual speech)."),

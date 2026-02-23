@@ -113,19 +113,21 @@ The `jp()` function auto-detects CJK characters and switches the font accordingl
 story.append(section("Title", my_table))
 
 # Bullet points — collect into a list, then unpack:
-notes = [Spacer(1, 1 * mm)]
+notes: list = [Spacer(1, 1 * mm)]
 for n in [jp("First point."), jp("Second point.")]:
     notes.append(Paragraph(f"- {n}", note_s))
 story.append(section("Title", *notes))
 
 # Table + bullets together:
-extra = [Spacer(1, 1 * mm)]
+extra: list = [Spacer(1, 1 * mm)]
 for n in [...]:
     extra.append(Paragraph(f"- {n}", note_s))
 story.append(section("Title", my_table, *extra))
 ```
 
 Never append `section()` without content and then append bullets separately — this causes the header and body to split across pages.
+
+**Important:** annotate mixed-flowable lists with `: list` (e.g. `notes: list = [Spacer(...)]`). Without the annotation, Pylance infers the type from the first element (`list[Spacer]`) and reports errors when appending `Paragraph`.
 
 ## Vocab Registry
 

@@ -106,7 +106,7 @@ def build():
     story.append(section("Grammar: The Four Verb Particles", vpt))
     story.append(Spacer(1, 3.5 * mm))
 
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp(
             "を cannot be combined with は or も. To make a direct object the topic, just use は alone: 日本語は、習う。"

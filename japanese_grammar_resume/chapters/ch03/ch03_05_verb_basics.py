@@ -86,7 +86,7 @@ def build():
     story.append(section("Grammar: Verb Types", vtt))
     story.append(Spacer(1, 3.5 * mm))
 
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         "Verbs always come at the end of a clause in Japanese.",
         "A verb alone is a grammatically complete sentence — no subject required.",

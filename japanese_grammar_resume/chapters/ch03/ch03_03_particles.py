@@ -108,7 +108,7 @@ def build():
     story.append(hgt)
     story.append(Spacer(1, 3.5 * mm))
 
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("Once a topic is set with は, it doesn't need to be repeated — context carries it forward."),
         jp("も must be consistent: if one is negative, all も-linked items must also be negative."),

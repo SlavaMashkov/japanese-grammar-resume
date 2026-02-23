@@ -129,7 +129,7 @@ def build():
     story.append(section(jp("Grammar: の as Nominalizer and Explanatory んだ"), not_))
     story.append(Spacer(1, 3.5 * mm))
 
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("と lists everything; や/とか imply an incomplete list ('among other things')."),
         jp("の can replace a noun when context is clear: 誰の？ — ボブのだ。"),

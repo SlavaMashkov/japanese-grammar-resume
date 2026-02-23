@@ -173,7 +173,7 @@ def vocab_two_col(vocab_list):
     HEADER_H = 6 * mm
 
     def build(items, pad_to):
-        rows = [[cell("Word", bold=True, center=True), cell("Meaning", bold=True, center=True)]]
+        rows: list = [[cell("Word", bold=True, center=True), cell("Meaning", bold=True, center=True)]]
         for pairs, meaning in items:
             rows.append([kanji_cell(pairs), cell(meaning, sz=8)])
         while len(rows) - 1 < pad_to:

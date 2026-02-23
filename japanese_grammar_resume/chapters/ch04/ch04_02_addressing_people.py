@@ -204,7 +204,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp('私（わたし） is the safest default for "I". 僕 and 俺 are masculine-only.'),
         jp("Attach さん to last names for politeness. くん for males, ちゃん for endearing."),

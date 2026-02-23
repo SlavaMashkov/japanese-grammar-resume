@@ -123,7 +123,7 @@ def build():
     cw_te = [W / 4] * 4
     te_t = Table(te_rows, colWidths=cw_te)
     te_t.setStyle(TableStyle(TABLE_STYLE))
-    te_notes = [Spacer(1, 1 * mm)]
+    te_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("Positive: conjugate to past tense, replace た with て (だ with で)."),
         jp("Negative: same as i-adjectives — replace い with くて."),
@@ -134,7 +134,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 4.4.3 から and ので ---
-    kara_notes = [Spacer(1, 1 * mm)]
+    kara_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("[reason]から[result] = 'because [reason], [result]'."),
         jp("  時間がなかったからパーティーに行きませんでした。 — No time so didn't go to party."),
@@ -150,7 +150,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 4.4.4 のに — "despite" ---
-    noni_notes = [Spacer(1, 1 * mm)]
+    noni_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("[Sentence 2]のに[Sentence 1] = 'despite [S2], [S1]'."),
         jp("Grammatically identical to ので but with reversed meaning."),
@@ -163,7 +163,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 4.4.5 が and けど — contradiction ---
-    ga_notes = [Spacer(1, 1 * mm)]
+    ga_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("が (softer) and けど (casual) connect two sentences — contradiction or just topic shift."),
         jp("が is commonly seen with ～ます / ～です; けど with plain form."),
@@ -181,7 +181,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 4.4.6 し — multiple reasons ---
-    shi_notes = [Spacer(1, 1 * mm)]
+    shi_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("Attach し to the end of each clause to list multiple reasons (like や but for verbs / states)."),
         jp("  A：どうして彼が好きなの？ — Why do you like him?"),
@@ -223,7 +223,7 @@ def build():
             ]
         )
     )
-    tari_notes = [Spacer(1, 1 * mm)]
+    tari_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("Tense / polarity is controlled by the final する (した, しない, しなかった)."),
         jp(
@@ -238,7 +238,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("Chain nouns/na-adj with で, i-adj with くて. Last item keeps its original form."),
         jp("Te-form chains verbs: replace た→て (だ→で). Tense set by the final verb."),

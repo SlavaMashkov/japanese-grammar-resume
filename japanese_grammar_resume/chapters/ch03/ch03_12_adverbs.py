@@ -122,7 +122,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp(
             "早く can mean 'quickly' or 'early' depending on context: 早く走った (ran quickly) vs 早く食べた (ate early)."

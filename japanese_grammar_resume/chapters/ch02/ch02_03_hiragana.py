@@ -128,7 +128,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("Pronunciation exceptions: し = shi, ち = chi, つ = tsu, ふ = fu, を = o (as particle)."),
         jp("Dakuten (゛) voices the consonant: k→g, s→z, t→d, h→b. Handakuten (゜): h→p."),

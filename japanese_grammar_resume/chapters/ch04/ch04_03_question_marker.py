@@ -64,7 +64,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Polite Form ---
-    polite_notes = [Spacer(1, 1 * mm)]
+    polite_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("か is attached to the end of a polite sentence to indicate a question."),
         jp("You don't need a question mark — か already signals it (though ? is sometimes added)."),
@@ -80,7 +80,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Casual Speech ---
-    casual_notes = [Spacer(1, 1 * mm)]
+    casual_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("In casual speech, か is NOT used for genuine questions — it sounds rough or sarcastic."),
         jp("Instead, か is used for rhetorical questions or internal wondering."),
@@ -95,7 +95,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- か in Relative Clauses ---
-    clause_notes = [Spacer(1, 1 * mm)]
+    clause_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("か at the end of a relative clause creates a mini-question inside a larger sentence."),
         jp("  昨日何を食べたか忘れた。 — Forgot what I ate yesterday."),
@@ -188,7 +188,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("In polite form, add か to the end to make a question. Never use だ before か."),
         jp("In casual speech, か is rhetorical/wondering — use の or intonation for real questions."),

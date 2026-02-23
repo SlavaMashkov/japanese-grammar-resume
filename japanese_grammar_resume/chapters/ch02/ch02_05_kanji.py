@@ -23,7 +23,7 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- 2.5.1 What is Kanji? ---
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         "Nouns, verb stems, adjective stems, and many adverbs are written in Kanji.",
         jp('Not all words use Kanji — some are always written in Hiragana (e.g. する, the verb "to do").'),
@@ -88,7 +88,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp(
             "Okurigana (送り仮名): kana suffix attached to a kanji so the reading stays stable across"

@@ -90,7 +90,7 @@ def build():
     story.append(section("Past-Negative Tense  (all verb types)", pnt))
     story.append(Spacer(1, 3.5 * mm))
 
-    final_notes = [Spacer(1, 1 * mm)]
+    final_notes: list = [Spacer(1, 1 * mm)]
     for n in [
         jp("Past-negative works the same for ALL verbs: negative form → drop い → add かった."),
         jp("行く is a regular u-verb in all conjugations except past tense (行った, not 行いた)."),
