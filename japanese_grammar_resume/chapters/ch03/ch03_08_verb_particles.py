@@ -106,8 +106,7 @@ def build():
     story.append(section("Grammar: The Four Verb Particles", vpt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp(
             "を cannot be combined with は or も. To make a direct object the topic, just use は alone: 日本語は、習う。"
@@ -121,6 +120,7 @@ def build():
         jp("何で can mean 'by what means?' (なにで) or 'why?' (なんで) — context tells them apart."),
         jp("から (from) and まで (up to) can pair with に targets: 今日から明日までする。"),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

@@ -64,8 +64,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Polite Form ---
-    story.append(section(jp("Polite Form — か at Sentence End")))
-    story.append(Spacer(1, 1 * mm))
+    polite_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("か is attached to the end of a polite sentence to indicate a question."),
         jp("You don't need a question mark — か already signals it (though ? is sometimes added)."),
@@ -76,12 +75,12 @@ def build():
         jp("  鈴木さん：すみません。ちょっと、お腹がいっぱいです。 — Sorry. (My) stomach is a little full."),
         jp("すみません is a polite apology. ごめんなさい is slightly less formal. ごめん is casual."),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        polite_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section(jp("Polite Form — か at Sentence End"), *polite_notes))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Casual Speech ---
-    story.append(section(jp("Casual Speech — か Is Not for Real Questions")))
-    story.append(Spacer(1, 1 * mm))
+    casual_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("In casual speech, か is NOT used for genuine questions — it sounds rough or sarcastic."),
         jp("Instead, か is used for rhetorical questions or internal wondering."),
@@ -91,12 +90,12 @@ def build():
         jp("  こんなのを本当に食べる？ — Are you really going to eat something like this?"),
         jp("  そんなのは、あるの？ — Do you have something like that?"),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        casual_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section(jp("Casual Speech — か Is Not for Real Questions"), *casual_notes))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- か in Relative Clauses ---
-    story.append(section(jp("か in Relative Clauses — Embedded Questions")))
-    story.append(Spacer(1, 1 * mm))
+    clause_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("か at the end of a relative clause creates a mini-question inside a larger sentence."),
         jp("  昨日何を食べたか忘れた。 — Forgot what I ate yesterday."),
@@ -105,7 +104,8 @@ def build():
         jp('どうか = "whether or not": 先生が学校に行ったかどうか知らない。'),
         jp("Alternative: include both options: 行ったか行かなかったか知らない。"),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        clause_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section(jp("か in Relative Clauses — Embedded Questions"), *clause_notes))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Table: Question Words (word + か) ---
@@ -188,8 +188,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("In polite form, add か to the end to make a question. Never use だ before か."),
         jp("In casual speech, か is rhetorical/wondering — use の or intonation for real questions."),
@@ -200,6 +199,7 @@ def build():
         jp('Question word + でも = "any" (誰でも = anybody). 何でも is read なんでも, not なにでも.'),
         jp('Use 皆 or 皆さん for "everybody" (not 誰も). Use 全部 for "everything" (not 何も).'),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

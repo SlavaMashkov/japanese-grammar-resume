@@ -97,13 +97,13 @@ def build():
     story.append(section("Transitive / Intransitive Pairs", pt2))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("Intransitive verbs CANNOT take を. Use が or は instead: 電気がついた not 電気をついた."),
         jp("Exception: を can be used with intransitive motion verbs for traversed locations: 部屋を出た。"),
         "When unsure whether a verb is transitive or intransitive, check a dictionary (e.g. jisho.org).",
     ]:
-        story.append(Paragraph(f"- {jp(n) if isinstance(n, str) else n}", note_s))
+        final_notes.append(Paragraph(f"- {jp(n) if isinstance(n, str) else n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

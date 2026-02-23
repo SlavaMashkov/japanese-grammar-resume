@@ -128,8 +128,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("Pronunciation exceptions: し = shi, ち = chi, つ = tsu, ふ = fu, を = o (as particle)."),
         jp("Dakuten (゛) voices the consonant: k→g, s→z, t→d, h→b. Handakuten (゜): h→p."),
@@ -142,6 +141,7 @@ def build():
         jp("The /r/ sound is a tap — tongue flicks the roof of the mouth. Not English r or l."),
         "Stroke order and direction matter — learn them correctly from the start.",
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

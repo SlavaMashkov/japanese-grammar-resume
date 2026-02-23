@@ -129,8 +129,7 @@ def build():
     story.append(section(jp("Grammar: の as Nominalizer and Explanatory んだ"), not_))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("と lists everything; や/とか imply an incomplete list ('among other things')."),
         jp("の can replace a noun when context is clear: 誰の？ — ボブのだ。"),
@@ -138,6 +137,7 @@ def build():
         jp("な-adj still needs な before の: 静かなのがアリスの部屋だ。"),
         jp("んだ (spoken) = のだ (written). Used to give or seek explanations."),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

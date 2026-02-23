@@ -86,8 +86,7 @@ def build():
     story.append(section("Grammar: Verb Types", vtt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         "Verbs always come at the end of a clause in Japanese.",
         "A verb alone is a grammatically complete sentence — no subject required.",
@@ -97,6 +96,7 @@ def build():
         ),
         jp("ある (inanimate) and いる (animate) both mean 'to exist' but are not interchangeable."),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

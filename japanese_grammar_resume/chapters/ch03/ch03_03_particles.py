@@ -108,15 +108,14 @@ def build():
     story.append(hgt)
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
-    notes33 = [
+    final_notes = [Spacer(1, 1 * mm)]
+    for n in [
         jp("Once a topic is set with は, it doesn't need to be repeated — context carries it forward."),
         jp("も must be consistent: if one is negative, all も-linked items must also be negative."),
         jp('が always answers (or implies) a question like "who?" or "what?" — it identifies.'),
         jp('Think of は as "as for..." and が as "the one that is..."'),
-    ]
-    for n in notes33:
-        story.append(Paragraph(f"- {n}", note_s))
+    ]:
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

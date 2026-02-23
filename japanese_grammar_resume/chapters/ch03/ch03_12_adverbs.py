@@ -122,8 +122,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp(
             "早く can mean 'quickly' or 'early' depending on context: 早く走った (ran quickly) vs 早く食べた (ate early)."
@@ -135,6 +134,7 @@ def build():
         jp("ね seeks agreement; よ informs. When combined, order must be よね — never ねよ."),
         jp("Males tend to say そうだね instead of そうね."),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

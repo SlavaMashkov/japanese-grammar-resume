@@ -90,13 +90,13 @@ def build():
     story.append(section("Past-Negative Tense  (all verb types)", pnt))
     story.append(Spacer(1, 3.5 * mm))
 
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("Past-negative works the same for ALL verbs: negative form → drop い → add かった."),
         jp("行く is a regular u-verb in all conjugations except past tense (行った, not 行いた)."),
         jp("ある in past-negative: ない → なかった (there was no...)."),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

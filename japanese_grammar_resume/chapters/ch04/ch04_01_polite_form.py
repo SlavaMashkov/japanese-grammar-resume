@@ -187,8 +187,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp("Polite speech (丁寧語) is used with strangers and social superiors."),
         jp("Verb stem = drop る for ru-verbs, change /u/→/i/ for u-verbs."),
@@ -199,6 +198,7 @@ def build():
             "です ≠ だ: だ is declarative and used inside relative clauses; です shows politeness at sentence end only."
         ),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

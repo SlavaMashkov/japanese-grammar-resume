@@ -23,15 +23,15 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- 2.5.1 What is Kanji? ---
-    story.append(section("What is Kanji?"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         "Nouns, verb stems, adjective stems, and many adverbs are written in Kanji.",
         jp('Not all words use Kanji — some are always written in Hiragana (e.g. する, the verb "to do").'),
         "Learn Kanji alongside vocabulary from the start — spreading the load over time is far easier"
         " than cramming at an advanced level.",
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("What is Kanji?", *final_notes))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- 2.5.3 Reading Kanji ---
@@ -88,8 +88,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp(
             "Okurigana (送り仮名): kana suffix attached to a kanji so the reading stays stable across"
@@ -109,6 +108,7 @@ def build():
             " visual cues and removes ambiguity without needing spaces."
         ),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

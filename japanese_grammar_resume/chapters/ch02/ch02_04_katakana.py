@@ -116,8 +116,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         "Same sounds as Hiragana — only the characters are different.",
         jp(
@@ -129,6 +128,7 @@ def build():
         jp("・(middle dot) optionally separates words: ロック・アンド・ロール (rock and roll)."),
         "Forget the original English pronunciation — treat Katakana words as entirely Japanese.",
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

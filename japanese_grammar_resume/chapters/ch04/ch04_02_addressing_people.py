@@ -204,8 +204,7 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
+    final_notes = [Spacer(1, 1 * mm)]
     for n in [
         jp('私（わたし） is the safest default for "I". 僕 and 俺 are masculine-only.'),
         jp("Attach さん to last names for politeness. くん for males, ちゃん for endearing."),
@@ -216,6 +215,7 @@ def build():
             "Family: use humble forms (母、父) for your own family, polite forms (お母さん、お父さん) for others'."
         ),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story

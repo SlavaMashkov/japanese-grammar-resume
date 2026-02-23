@@ -86,15 +86,14 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Notes ---
-    story.append(section("Notes"))
-    story.append(Spacer(1, 1 * mm))
-    notes = [
+    final_notes = [Spacer(1, 1 * mm)]
+    for n in [
         jp("「だ」 makes the statement emphatic and declarative. More commonly used by men."),
         jp("Without 「だ」, state-of-being is still implied from context (very common in casual speech)."),
         jp("Negative and past forms are NOT declarative on their own — 「だ」 can be added separately."),
         jp("Casual greeting:  元気？ — 元気。  (Are you well? — I'm well.)"),
-    ]
-    for n in notes:
-        story.append(Paragraph(f"- {n}", note_s))
+    ]:
+        final_notes.append(Paragraph(f"- {n}", note_s))
+    story.append(section("Notes", *final_notes))
 
     return story
