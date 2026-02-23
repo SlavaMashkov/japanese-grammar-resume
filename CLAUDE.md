@@ -55,6 +55,7 @@ japanese_grammar_resume/           — Python package
       ch04_01_polite_form.py
       ch04_02_addressing_people.py
       ch04_03_question_marker.py
+      ch04_04_compound_sentences.py
 ```
 
 ## Running
@@ -101,6 +102,26 @@ The `jp()` function auto-detects CJK characters and switches the font accordingl
 2. Import `from ...styles import *` — all helpers and styles are available.
 3. The first file (`ch01_00`) does not start with `PageBreak()`; all others do.
 4. Chapters are auto-discovered — no manual imports needed in `__main__.py`.
+5. **Always use `section()` with content** to prevent page breaks between a section header and its body. Pass tables and/or bullet lists as arguments:
+
+```python
+# Tables — pass directly:
+story.append(section("Title", my_table))
+
+# Bullet points — collect into a list, then unpack:
+notes = [Spacer(1, 1 * mm)]
+for n in [jp("First point."), jp("Second point.")]:
+    notes.append(Paragraph(f"- {n}", note_s))
+story.append(section("Title", *notes))
+
+# Table + bullets together:
+extra = [Spacer(1, 1 * mm)]
+for n in [...]:
+    extra.append(Paragraph(f"- {n}", note_s))
+story.append(section("Title", my_table, *extra))
+```
+
+Never append `section()` without content and then append bullets separately — this causes the header and body to split across pages.
 
 ## Vocab Registry
 

@@ -1138,5 +1138,130 @@
     "pairs": [["", "ク"], ["", "ッ"], ["", "キ"], ["", "ー"]],
     "meaning": "cookie",
     "chapter": "ch04_03"
+  },
+  "一般的": {
+    "pairs": [["いっ", "一"], ["ぱん", "般"], ["てき", "的"]],
+    "meaning": "in general",
+    "chapter": "ch04_04"
+  },
+  "狭い": {
+    "pairs": [["せま", "狭"], ["", "い"]],
+    "meaning": "narrow  (i-adj)",
+    "chapter": "ch04_04"
+  },
+  "お金持ち": {
+    "pairs": [["", "お"], ["かね", "金"], ["も", "持"], ["", "ち"]],
+    "meaning": "rich",
+    "chapter": "ch04_04"
+  },
+  "魅力的": {
+    "pairs": [["み", "魅"], ["りょく", "力"], ["てき", "的"]],
+    "meaning": "charming",
+    "chapter": "ch04_04"
+  },
+  "食堂": {
+    "pairs": [["しょく", "食"], ["どう", "堂"]],
+    "meaning": "cafeteria",
+    "chapter": "ch04_04"
+  },
+  "昼寝": {
+    "pairs": [["ひる", "昼"], ["ね", "寝"]],
+    "meaning": "afternoon nap",
+    "chapter": "ch04_04"
+  },
+  "パーティー": {
+    "pairs": [["", "パ"], ["", "ー"], ["", "テ"], ["", "ィ"], ["", "ー"]],
+    "meaning": "party",
+    "chapter": "ch04_04"
+  },
+  "プレゼント": {
+    "pairs": [["", "プ"], ["", "レ"], ["", "ゼ"], ["", "ン"], ["", "ト"]],
+    "meaning": "present",
+    "chapter": "ch04_04"
+  },
+  "どうして": {
+    "pairs": [["", "ど"], ["", "う"], ["", "し"], ["", "て"]],
+    "meaning": "why",
+    "chapter": "ch04_04"
+  },
+  "山田": {
+    "pairs": [["やま", "山"], ["だ", "田"]],
+    "meaning": "Yamada (last name)",
+    "chapter": "ch04_04"
+  },
+  "一郎": {
+    "pairs": [["いち", "一"], ["ろう", "郎"]],
+    "meaning": "Ichirou (first name)",
+    "chapter": "ch04_04"
+  },
+  "直子": {
+    "pairs": [["なお", "直"], ["こ", "子"]],
+    "meaning": "Naoko (first name)",
+    "chapter": "ch04_04"
+  },
+  "そろそろ": {
+    "pairs": [["", "そ"], ["", "ろ"], ["", "そ"], ["", "ろ"]],
+    "meaning": "gradually; soon",
+    "chapter": "ch04_04"
+  },
+  "失礼": {
+    "pairs": [["しつ", "失"], ["れい", "礼"]],
+    "meaning": "discourtesy",
+    "chapter": "ch04_04"
+  },
+  "穏やか": {
+    "pairs": [["おだ", "穏"], ["", "や"], ["", "か"]],
+    "meaning": "calm; peaceful  (na-adj)",
+    "chapter": "ch04_04"
+  },
+  "運動": {
+    "pairs": [["うん", "運"], ["どう", "動"]],
+    "meaning": "exercise",
+    "chapter": "ch04_04"
+  },
+  "痩せる": {
+    "pairs": [["や", "痩"], ["", "せ"], ["", "る"]],
+    "meaning": "to become thin  (ru-verb)",
+    "chapter": "ch04_04"
+  },
+  "デパート": {
+    "pairs": [["", "デ"], ["", "パ"], ["", "ー"], ["", "ト"]],
+    "meaning": "department store",
+    "chapter": "ch04_04"
+  },
+  "欲しい": {
+    "pairs": [["ほ", "欲"], ["", "し"], ["", "い"]],
+    "meaning": "desirable  (i-adj)",
+    "chapter": "ch04_04"
+  },
+  "まだ": {
+    "pairs": [["", "ま"], ["", "だ"]],
+    "meaning": "yet",
+    "chapter": "ch04_04"
+  },
+  "年上": {
+    "pairs": [["とし", "年"], ["うえ", "上"]],
+    "meaning": "older",
+    "chapter": "ch04_04"
+  },
+  "優しい": {
+    "pairs": [["やさ", "優"], ["", "し"], ["", "い"]],
+    "meaning": "gentle; kind  (i-adj)",
+    "chapter": "ch04_04"
+  },
+  "簡単": {
+    "pairs": [["かん", "簡"], ["たん", "単"]],
+    "meaning": "simple  (na-adj)",
+    "chapter": "ch04_04"
+  },
+  "難しい": {
+    "pairs": [["むずか", "難"], ["", "し"], ["", "い"]],
+    "meaning": "difficult  (i-adj)",
+    "chapter": "ch04_04"
+  },
+  "読む": {
+    "pairs": [["よ", "読"], ["", "む"]],
+    "meaning": "to read  (u-verb)",
+    "chapter": "ch04_04"
   }
 }
