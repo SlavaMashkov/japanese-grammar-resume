@@ -14,7 +14,7 @@ Here's what a page with the chapter 3.8 Particles Used with Verbs looks like:
 
 ```bash
 # Clone
-git clone https://github.com/<user>/japanese-grammar-resume.git
+git clone https://github.com/SlavaMashkov/japanese-grammar-resume.git
 cd japanese-grammar-resume
 
 # Create a virtual environment and install dependencies
