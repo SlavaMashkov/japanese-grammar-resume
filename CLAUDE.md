@@ -22,15 +22,22 @@ japanese_grammar_resume/           — Python package
     __init__.py
     ch01/                          — Part 1: Introduction
       __init__.py
-      ch01_01_introduction.py
+      ch01_00_introduction.py
+      ch01_01_problem.py
+      ch01_02_japanese_guide.py
+      ch01_03_suggestions.py
     ch02/                          — Part 2: The Writing System
       __init__.py
-      ch02_01_writing_system.py
+      ch02_00_writing_system.py
+      ch02_01_scripts.py
+      ch02_02_intonation.py
       ch02_03_hiragana.py
       ch02_04_katakana.py
       ch02_05_kanji.py
     ch03/                          — Part 3: Basic Grammar
       __init__.py
+      ch03_00_basic_grammar.py
+      ch03_01_basic_grammatical_structures.py
       ch03_02_state_of_being.py
       ch03_03_particles.py
       ch03_04_adjectives.py
@@ -44,6 +51,7 @@ japanese_grammar_resume/           — Python package
       ch03_12_adverbs.py
     ch04/                          — Part 4: Essential Grammar
       __init__.py
+      ch04_00_essential_grammar.py
       ch04_01_polite_form.py
 ```
 
@@ -89,7 +97,7 @@ The `jp()` function auto-detects CJK characters and switches the font accordingl
 
 1. Create `japanese_grammar_resume/chapters/chXX/chXX_YY_name.py` with a `build()` function returning a `list` of story elements. If the part subdirectory doesn't exist yet, create it with an empty `__init__.py`.
 2. Import `from ...styles import *` — all helpers and styles are available.
-3. The first chapter (1.1) does not start with `PageBreak()`; all others do.
+3. The first file (`ch01_00`) does not start with `PageBreak()`; all others do.
 4. Chapters are auto-discovered — no manual imports needed in `__main__.py`.
 
 ## Vocab Registry

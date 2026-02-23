@@ -63,11 +63,22 @@ japanese_grammar_resume/        Python package
   styles.py                     fonts, styles, helpers
   vocab_registry.json           vocabulary (single source of truth)
   chapters/                     one subdir per part, auto-discovered
-    ch03/                       Part 3: Basic Grammar
-      ch03_02_state_of_being.py
-      ch03_03_particles.py
-      ch03_04_adjectives.py
+    ch01/                       Part 1: Introduction
+      ch01_00_introduction.py
+      ch01_01_problem.py
       ...
+    ch02/                       Part 2: The Writing System
+      ch02_00_writing_system.py
+      ch02_01_scripts.py
+      ...
+    ch03/                       Part 3: Basic Grammar
+      ch03_00_basic_grammar.py
+      ch03_01_basic_grammatical_structures.py
+      ch03_02_state_of_being.py
+      ...
+    ch04/                       Part 4: Essential Grammar
+      ch04_00_essential_grammar.py
+      ch04_01_polite_form.py
 scripts/
   sync_vocab_registry.py        vocabulary validation
 fonts/                          NotoSansJP-Light.ttf
