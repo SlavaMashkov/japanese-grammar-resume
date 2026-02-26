@@ -27,6 +27,6 @@ def build():
         "It describes how to integrate the various parts of speech into a coherent sentence by using particles.",
         "By the end of this section, you should have an understanding of how basic sentences are constructed.",
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        story.append(Paragraph(n, note_s))
 
     return story

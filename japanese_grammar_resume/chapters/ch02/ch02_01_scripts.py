@@ -34,6 +34,6 @@ def build():
         jp("Hiragana: grammar (particles, endings), rare-kanji words, colloquial expressions, onomatopoeia."),
         jp("Katakana: foreign loanwords, emphasis (like italics), scientific terms."),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        story.append(Paragraph(n, note_s))
 
     return story

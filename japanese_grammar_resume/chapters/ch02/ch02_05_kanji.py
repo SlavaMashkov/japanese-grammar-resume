@@ -30,7 +30,7 @@ def build():
         "Learn Kanji alongside vocabulary from the start — spreading the load over time is far easier"
         " than cramming at an advanced level.",
     ]:
-        final_notes.append(Paragraph(f"- {n}", note_s))
+        final_notes.append(Paragraph(n, note_s))
     story.append(section("What is Kanji?", *final_notes))
     story.append(Spacer(1, 3.5 * mm))
 

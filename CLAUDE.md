@@ -113,20 +113,35 @@ The `jp()` function auto-detects CJK characters and switches the font accordingl
 # Tables — pass directly:
 story.append(section("Title", my_table))
 
-# Bullet points — collect into a list, then unpack:
+# Content sections — rules as plain text, examples indented:
+notes: list = [Spacer(1, 1 * mm)]
+notes += [
+    Paragraph(jp("Rule or explanation text."), note_s),
+    Paragraph(jp("Example sentence. — Translation."), ex_s),
+]
+story.append(section("Title", *notes))
+
+# Notes section (end of chapter) — keep bullet prefix:
 notes: list = [Spacer(1, 1 * mm)]
 for n in [jp("First point."), jp("Second point.")]:
     notes.append(Paragraph(f"- {n}", note_s))
-story.append(section("Title", *notes))
+story.append(section("Notes", *notes))
 
-# Table + bullets together:
+# Table + content together:
 extra: list = [Spacer(1, 1 * mm)]
-for n in [...]:
-    extra.append(Paragraph(f"- {n}", note_s))
+extra += [
+    Paragraph(jp("Rule text."), note_s),
+    Paragraph(jp("Example sentence. — Translation."), ex_s),
+]
 story.append(section("Title", my_table, *extra))
 ```
 
 Never append `section()` without content and then append bullets separately — this causes the header and body to split across pages.
+
+**Content section formatting:**
+- **Rules/explanations** → `Paragraph(text, note_s)` — plain text, no bullet prefix
+- **Example sentences** (Japanese + translation) → `Paragraph(text, ex_s)` — indented (8mm), no bullet
+- **Notes section** (final section of each chapter) → `Paragraph(f"- {text}", note_s)` — keeps bullet prefix
 
 **Important:** annotate mixed-flowable lists with `: list` (e.g. `notes: list = [Spacer(...)]`). Without the annotation, Pylance infers the type from the first element (`list[Spacer]`) and reports errors when appending `Paragraph`.
 

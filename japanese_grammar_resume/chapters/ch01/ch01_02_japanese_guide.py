@@ -29,6 +29,6 @@ def build():
         "The hardest concepts come first, building a solid foundation; everything after becomes easier.",
         jp("Japanese quotation marks: 「 」 (half brackets)."),
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        story.append(Paragraph(n, note_s))
 
     return story

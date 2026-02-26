@@ -65,46 +65,65 @@ def build():
 
     # --- Polite Form ---
     polite_notes: list = [Spacer(1, 1 * mm)]
-    for n in [
-        jp("か is attached to the end of a polite sentence to indicate a question."),
-        jp("You don't need a question mark — か already signals it (though ? is sometimes added)."),
-        jp("Do NOT use the declarative だ before か. Use です form directly."),
-        jp("  田中さん：お母さんはどこですか。 — Where is (your) mother?"),
-        jp("  鈴木さん：母は買い物に行きました。 — (My) mother went shopping."),
-        jp("  キムさん：イタリア料理を食べに行きませんか。 — Go to eat Italian food?"),
-        jp("  鈴木さん：すみません。ちょっと、お腹がいっぱいです。 — Sorry. (My) stomach is a little full."),
-        jp("すみません is a polite apology. ごめんなさい is slightly less formal. ごめん is casual."),
-    ]:
-        polite_notes.append(Paragraph(f"- {n}", note_s))
+    polite_notes += [
+        Paragraph(jp("か is attached to the end of a polite sentence to indicate a question."), note_s),
+        Paragraph(
+            jp("You don't need a question mark — か already signals it (though ? is sometimes added)."),
+            note_s,
+        ),
+        Paragraph(jp("Do NOT use the declarative だ before か. Use です form directly."), note_s),
+        Paragraph(jp("田中さん：お母さんはどこですか。 — Where is (your) mother?"), ex_s),
+        Paragraph(jp("鈴木さん：母は買い物に行きました。 — (My) mother went shopping."), ex_s),
+        Paragraph(jp("キムさん：イタリア料理を食べに行きませんか。 — Go to eat Italian food?"), ex_s),
+        Paragraph(
+            jp(
+                "鈴木さん：すみません。ちょっと、お腹がいっぱいです。 — Sorry. (My) stomach is a little full."
+            ),
+            ex_s,
+        ),
+        Paragraph(
+            jp("すみません is a polite apology. ごめんなさい is slightly less formal. ごめん is casual."),
+            note_s,
+        ),
+    ]
     story.append(section(jp("Polite Form — か at Sentence End"), *polite_notes))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- Casual Speech ---
     casual_notes: list = [Spacer(1, 1 * mm)]
-    for n in [
-        jp("In casual speech, か is NOT used for genuine questions — it sounds rough or sarcastic."),
-        jp("Instead, か is used for rhetorical questions or internal wondering."),
-        jp("  こんなのを本当に食べるか？ — Do you think [he] will really eat this type of thing?"),
-        jp("  そんなのは、あるかよ！ — Do I look like I would have something like that?!"),
-        jp("Real casual questions use the explanatory の particle or just rising intonation:"),
-        jp("  こんなのを本当に食べる？ — Are you really going to eat something like this?"),
-        jp("  そんなのは、あるの？ — Do you have something like that?"),
-    ]:
-        casual_notes.append(Paragraph(f"- {n}", note_s))
+    casual_notes += [
+        Paragraph(
+            jp("In casual speech, か is NOT used for genuine questions — it sounds rough or sarcastic."),
+            note_s,
+        ),
+        Paragraph(jp("Instead, か is used for rhetorical questions or internal wondering."), note_s),
+        Paragraph(
+            jp("こんなのを本当に食べるか？ — Do you think [he] will really eat this type of thing?"), ex_s
+        ),
+        Paragraph(jp("そんなのは、あるかよ！ — Do I look like I would have something like that?!"), ex_s),
+        Paragraph(
+            jp("Real casual questions use the explanatory の particle or just rising intonation:"), note_s
+        ),
+        Paragraph(jp("こんなのを本当に食べる？ — Are you really going to eat something like this?"), ex_s),
+        Paragraph(jp("そんなのは、あるの？ — Do you have something like that?"), ex_s),
+    ]
     story.append(section(jp("Casual Speech — か Is Not for Real Questions"), *casual_notes))
     story.append(Spacer(1, 3.5 * mm))
 
     # --- か in Relative Clauses ---
     clause_notes: list = [Spacer(1, 1 * mm)]
-    for n in [
-        jp("か at the end of a relative clause creates a mini-question inside a larger sentence."),
-        jp("  昨日何を食べたか忘れた。 — Forgot what I ate yesterday."),
-        jp("  彼は何を言ったか分からない。 — Don't understand what he said."),
-        jp("  先生が学校に行ったか教えない？ — Won't you inform me whether teacher went to school?"),
-        jp('どうか = "whether or not": 先生が学校に行ったかどうか知らない。'),
-        jp("Alternative: include both options: 行ったか行かなかったか知らない。"),
-    ]:
-        clause_notes.append(Paragraph(f"- {n}", note_s))
+    clause_notes += [
+        Paragraph(
+            jp("か at the end of a relative clause creates a mini-question inside a larger sentence."), note_s
+        ),
+        Paragraph(jp("昨日何を食べたか忘れた。 — Forgot what I ate yesterday."), ex_s),
+        Paragraph(jp("彼は何を言ったか分からない。 — Don't understand what he said."), ex_s),
+        Paragraph(
+            jp("先生が学校に行ったか教えない？ — Won't you inform me whether teacher went to school?"), ex_s
+        ),
+        Paragraph(jp('どうか = "whether or not": 先生が学校に行ったかどうか知らない。'), note_s),
+        Paragraph(jp("Alternative: include both options: 行ったか行かなかったか知らない。"), note_s),
+    ]
     story.append(section(jp("か in Relative Clauses — Embedded Questions"), *clause_notes))
     story.append(Spacer(1, 3.5 * mm))
 

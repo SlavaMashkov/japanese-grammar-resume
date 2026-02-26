@@ -28,6 +28,6 @@ def build():
         "Read Japanese everywhere — websites, books, manga. Vocabulary grows with exposure.",
         "Speaking and listening require real conversation with fluent speakers — audio alone is not enough.",
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        story.append(Paragraph(n, note_s))
 
     return story

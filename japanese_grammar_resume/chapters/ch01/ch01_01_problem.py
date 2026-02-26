@@ -28,6 +28,6 @@ def build():
         "Kanji is avoided, leaving learners unable to read anything real when they arrive in Japan.",
         'The result: a patchwork of "say this to mean that" rules with no understanding of the underlying logic.',
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        story.append(Paragraph(n, note_s))
 
     return story

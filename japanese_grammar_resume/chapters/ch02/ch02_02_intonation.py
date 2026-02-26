@@ -29,6 +29,6 @@ def build():
         "Pitch accent (high/low tones) is crucial — homophones often differ only in pitch.",
         "Don't memorize pitch rules (they vary by context and dialect). Learn by mimicking native speakers.",
     ]:
-        story.append(Paragraph(f"- {n}", note_s))
+        story.append(Paragraph(n, note_s))
 
     return story
