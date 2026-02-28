@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
@@ -19,9 +20,22 @@ from reportlab.platypus import (
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-pdfmetrics.registerFont(TTFont("DV", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
-pdfmetrics.registerFont(TTFont("DV-B", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"))
-pdfmetrics.registerFont(TTFont("JP", os.path.join(BASE_DIR, "fonts", "NotoSansJP-Light.ttf")))
+_FONTS = [
+    ("DV", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", "sudo apt install fonts-dejavu-core"),
+    ("DV-B", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", "sudo apt install fonts-dejavu-core"),
+    (
+        "JP",
+        os.path.join(BASE_DIR, "fonts", "NotoSansJP-Light.ttf"),
+        "ensure fonts/NotoSansJP-Light.ttf exists",
+    ),
+]
+for _name, _path, _hint in _FONTS:
+    try:
+        pdfmetrics.registerFont(TTFont(_name, _path))
+    except Exception as exc:
+        print(f"Error: cannot register font '{_name}' from {_path}: {exc}", file=sys.stderr)
+        print(f"  Hint: {_hint}", file=sys.stderr)
+        sys.exit(1)
 
 
 def jp(text):
@@ -210,10 +224,19 @@ def vocab_from_registry(keys):
     global _registry_cache
     if _registry_cache is None:
         reg_path = os.path.join(os.path.dirname(__file__), "vocab_registry.json")
-        with open(reg_path, encoding="utf-8") as f:
-            _registry_cache = json.load(f)
+        try:
+            with open(reg_path, encoding="utf-8") as f:
+                _registry_cache = json.load(f)
+        except FileNotFoundError:
+            raise FileNotFoundError(f"Vocab registry not found: {reg_path}") from None
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"Vocab registry is not valid JSON: {reg_path}\n{exc}") from None
     result = []
     for key in keys:
+        if key not in _registry_cache:
+            raise KeyError(
+                f"Vocab key '{key}' not found in vocab_registry.json. Add it to the registry or fix the typo."
+            )
         entry = _registry_cache[key]
         pairs = [tuple(p) for p in entry["pairs"]]
         result.append((pairs, entry["meaning"]))

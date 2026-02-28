@@ -24,31 +24,31 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary 3.4 ---
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
-
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "静か",
-                    "きれい",
-                    "親切",
-                    "好き",
-                    "嫌い",
-                    "いい",
-                    "おいしい",
-                    "高い",
-                    "かっこいい",
-                    "魚",
-                    "肉",
-                    "や菜",
-                    "食べ物",
-                    "値段",
-                    "彼",
-                    "あまり",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "静か",
+                        "きれい",
+                        "親切",
+                        "好き",
+                        "嫌い",
+                        "いい",
+                        "おいしい",
+                        "高い",
+                        "かっこいい",
+                        "魚",
+                        "肉",
+                        "や菜",
+                        "食べ物",
+                        "値段",
+                        "彼",
+                        "あまり",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))

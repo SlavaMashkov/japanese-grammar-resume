@@ -22,38 +22,39 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "食べる",
-                    "分かる",
-                    "見る",
-                    "寝る",
-                    "起きる",
-                    "考える",
-                    "教える",
-                    "出る",
-                    "いる",
-                    "着る",
-                    "話す",
-                    "聞く",
-                    "泳ぐ",
-                    "遊ぶ",
-                    "待つ",
-                    "飲む",
-                    "買う",
-                    "ある",
-                    "死ぬ",
-                    "する",
-                    "来る",
-                    "お金",
-                    "猫",
-                    "帰る",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "食べる",
+                        "分かる",
+                        "見る",
+                        "寝る",
+                        "起きる",
+                        "考える",
+                        "教える",
+                        "出る",
+                        "いる",
+                        "着る",
+                        "話す",
+                        "聞く",
+                        "泳ぐ",
+                        "遊ぶ",
+                        "待つ",
+                        "飲む",
+                        "買う",
+                        "ある",
+                        "死ぬ",
+                        "する",
+                        "来る",
+                        "お金",
+                        "猫",
+                        "帰る",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))

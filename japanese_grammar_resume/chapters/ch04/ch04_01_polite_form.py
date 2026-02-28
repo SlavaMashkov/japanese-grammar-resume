@@ -23,36 +23,37 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary ---
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "丁寧語",
-                    "尊敬語",
-                    "謙譲語",
-                    "はい",
-                    "いいえ",
-                    "怒る",
-                    "鉄拳",
-                    "休み",
-                    "楽しむ",
-                    "走り出す",
-                    "替える",
-                    "着替える",
-                    "加える",
-                    "付け加える",
-                    "言う",
-                    "言い出す",
-                    "子犬",
-                    "とても",
-                    "昨日",
-                    "その",
-                    "思う",
-                    "答える",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "丁寧語",
+                        "尊敬語",
+                        "謙譲語",
+                        "はい",
+                        "いいえ",
+                        "怒る",
+                        "鉄拳",
+                        "休み",
+                        "楽しむ",
+                        "走り出す",
+                        "替える",
+                        "着替える",
+                        "加える",
+                        "付け加える",
+                        "言う",
+                        "言い出す",
+                        "子犬",
+                        "とても",
+                        "昨日",
+                        "その",
+                        "思う",
+                        "答える",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))

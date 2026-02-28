@@ -22,32 +22,33 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "早い",
-                    "自分",
-                    "たくさん",
-                    "最近",
-                    "全然",
-                    "声",
-                    "結構",
-                    "大きい",
-                    "この",
-                    "町",
-                    "変わる",
-                    "中",
-                    "天気",
-                    "そう",
-                    "時間",
-                    "大丈夫",
-                    "雨",
-                    "降る",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "早い",
+                        "自分",
+                        "たくさん",
+                        "最近",
+                        "全然",
+                        "声",
+                        "結構",
+                        "大きい",
+                        "この",
+                        "町",
+                        "変わる",
+                        "中",
+                        "天気",
+                        "そう",
+                        "時間",
+                        "大丈夫",
+                        "雨",
+                        "降る",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))

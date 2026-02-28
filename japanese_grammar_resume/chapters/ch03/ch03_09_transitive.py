@@ -22,32 +22,33 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
 
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "電気",
-                    "窓",
-                    "箱",
-                    "落とす",
-                    "落ちる",
-                    "出す",
-                    "入れる",
-                    "入る",
-                    "開ける",
-                    "開く",
-                    "閉める",
-                    "閉まる",
-                    "つける",
-                    "つく",
-                    "消す",
-                    "消える",
-                    "抜く",
-                    "抜ける",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "電気",
+                        "窓",
+                        "箱",
+                        "落とす",
+                        "落ちる",
+                        "出す",
+                        "入れる",
+                        "入る",
+                        "開ける",
+                        "開く",
+                        "閉める",
+                        "閉まる",
+                        "つける",
+                        "つく",
+                        "消す",
+                        "消える",
+                        "抜く",
+                        "抜ける",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))
@@ -101,9 +102,9 @@ def build():
     for n in [
         jp("Intransitive verbs CANNOT take を. Use が or は instead: 電気がついた not 電気をついた."),
         jp("Exception: を can be used with intransitive motion verbs for traversed locations: 部屋を出た。"),
-        "When unsure whether a verb is transitive or intransitive, check a dictionary (e.g. jisho.org).",
+        jp("When unsure whether a verb is transitive or intransitive, check a dictionary (e.g. jisho.org)."),
     ]:
-        final_notes.append(Paragraph(f"- {jp(n) if isinstance(n, str) else n}", note_s))
+        final_notes.append(Paragraph(f"- {n}", note_s))
     story.append(section("Notes", *final_notes))
 
     return story

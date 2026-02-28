@@ -24,18 +24,18 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary 3.3 ---
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
-
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "誰",
-                    "私",
-                    "でも",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "誰",
+                        "私",
+                        "でも",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))
@@ -82,9 +82,6 @@ def build():
     story.append(Spacer(1, 3.5 * mm))
 
     # --- は vs が comparison ---
-    story.append(section(jp("Note: は vs が")))
-    story.append(Spacer(1, 1 * mm))
-
     hg = [
         ["", jp("私は学生。"), jp("私が学生。")],
         ["Translation", "As for me, I am a student.", "I am the one who is a student."],
@@ -105,7 +102,7 @@ def build():
             ]
         )
     )
-    story.append(hgt)
+    story.append(section(jp("Note: は vs が"), hgt))
     story.append(Spacer(1, 3.5 * mm))
 
     final_notes: list = [Spacer(1, 1 * mm)]

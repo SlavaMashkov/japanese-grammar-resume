@@ -28,24 +28,25 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary ---
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "駄目",
-                    "夜",
-                    "遅い",
-                    "電話",
-                    "構う",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "駄目",
+                        "夜",
+                        "遅い",
+                        "電話",
+                        "構う",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))
 
-    # --- Summary Table ---
+    # --- Patterns Overview ---
     sum_data = [
         ["Pattern", "Meaning", "Example"],
         [

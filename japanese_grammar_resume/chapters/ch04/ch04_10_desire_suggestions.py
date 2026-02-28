@@ -28,22 +28,23 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary ---
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "温泉",
-                    "ケーキ",
-                    "一緒",
-                    "縫いぐるみ",
-                    "全部",
-                    "テーマパーク",
-                    "カレー",
-                    "たまに",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "温泉",
+                        "ケーキ",
+                        "一緒",
+                        "縫いぐるみ",
+                        "全部",
+                        "テーマパーク",
+                        "カレー",
+                        "たまに",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))
@@ -161,7 +162,7 @@ def build():
     story.append(section(jp("欲しい — Want Something / Want Done"), *hoshii_notes))
     story.append(Spacer(1, 3.5 * mm))
 
-    # --- Volitional Form — Casual ---
+    # --- Conjugation table helper ---
     def conj_tbl(data, cw):
         rows = [
             [cell(c, bold=(ri == 0), center=True, sz=8) for ci, c in enumerate(row)]
@@ -171,6 +172,7 @@ def build():
         t.setStyle(TableStyle(TABLE_STYLE))
         return t
 
+    # --- Volitional Form — Casual ---
     ru_data = [
         ["Plain", "Volitional"],
         [jp("食べる"), jp("食べよう")],
@@ -245,12 +247,7 @@ def build():
         [jp("行く"), jp("行きましょう")],
         [jp("遊ぶ"), jp("遊びましょう")],
     ]
-    pol_rows = [
-        [cell(c, bold=(ri == 0), center=True, sz=8) for ci, c in enumerate(row)]
-        for ri, row in enumerate(pol_data)
-    ]
-    pol_t = Table(pol_rows, colWidths=[30 * mm, 36 * mm])
-    pol_t.setStyle(TableStyle(TABLE_STYLE))
+    pol_t = conj_tbl(pol_data, [30 * mm, 36 * mm])
 
     pol_notes: list = [Spacer(1, 1 * mm)]
     pol_notes += [

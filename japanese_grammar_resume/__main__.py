@@ -1,6 +1,7 @@
 import argparse
 import importlib
 import re
+import sys
 from pathlib import Path
 
 from reportlab.platypus import Paragraph
@@ -32,14 +33,26 @@ class BookmarkedDoc(SimpleDocTemplate):
 
 
 def _discover_chapters() -> list:
-    """Import all ch*/*.py modules under chapters/ and call build() in sorted order."""
+    """Import all ch*/*.py modules under chapters/ in sorted order and return them."""
     modules = []
     for part_dir in sorted(CHAPTERS_DIR.iterdir()):
-        if not part_dir.is_dir() or not re.match(r"ch\d+", part_dir.name):
+        if not part_dir.is_dir():
+            continue
+        if not re.match(r"ch\d+", part_dir.name):
+            if part_dir.name != "__pycache__":
+                print(f"Warning: skipping non-chapter directory: {part_dir.name}", file=sys.stderr)
             continue
         for py_file in sorted(part_dir.glob("ch*.py")):
             module_name = f".chapters.{part_dir.name}.{py_file.stem}"
-            modules.append(importlib.import_module(module_name, package="japanese_grammar_resume"))
+            try:
+                mod = importlib.import_module(module_name, package="japanese_grammar_resume")
+            except Exception as exc:
+                raise ImportError(
+                    f"Failed to import '{module_name}': {exc}\nCheck {py_file} for errors."
+                ) from exc
+            if not hasattr(mod, "build"):
+                raise AttributeError(f"Module '{module_name}' has no build() function.")
+            modules.append(mod)
     return modules
 
 
@@ -84,7 +97,10 @@ def main():
 
     story = []
     for module in _discover_chapters():
-        story += module.build()
+        try:
+            story += module.build()
+        except Exception as exc:
+            raise RuntimeError(f"Error building '{module.__name__}': {exc}") from exc
 
     doc.build(story)
     print("Done:", output_path)

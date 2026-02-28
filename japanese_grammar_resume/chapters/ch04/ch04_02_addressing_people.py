@@ -23,38 +23,39 @@ def build():
     story.append(Spacer(1, 3 * mm))
 
     # --- Vocabulary ---
-    story.append(section("Vocabulary"))
-    story.append(Spacer(1, 1 * mm))
     story.append(
-        vocab_two_col(
-            vocab_from_registry(
-                [
-                    "名前",
-                    "僕",
-                    "俺",
-                    "社長",
-                    "課長",
-                    "田中",
-                    "彼女",
-                    "母",
-                    "お母さん",
-                    "両親",
-                    "父",
-                    "お父さん",
-                    "妻",
-                    "奥さん",
-                    "夫",
-                    "主人",
-                    "姉",
-                    "お姉さん",
-                    "兄",
-                    "お兄さん",
-                    "妹",
-                    "弟",
-                    "息子",
-                    "娘",
-                ]
-            )
+        section(
+            "Vocabulary",
+            vocab_two_col(
+                vocab_from_registry(
+                    [
+                        "名前",
+                        "僕",
+                        "俺",
+                        "社長",
+                        "課長",
+                        "田中",
+                        "彼女",
+                        "母",
+                        "お母さん",
+                        "両親",
+                        "父",
+                        "お父さん",
+                        "妻",
+                        "奥さん",
+                        "夫",
+                        "主人",
+                        "姉",
+                        "お姉さん",
+                        "兄",
+                        "お兄さん",
+                        "妹",
+                        "弟",
+                        "息子",
+                        "娘",
+                    ]
+                )
+            ),
         )
     )
     story.append(Spacer(1, 3.5 * mm))
