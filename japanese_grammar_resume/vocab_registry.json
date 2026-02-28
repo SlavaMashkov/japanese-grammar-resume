@@ -1693,5 +1693,70 @@
     "pairs": [["み", "観"], ["", "る"]],
     "meaning": "to watch  (ru-verb)",
     "chapter": "ch04_08"
+  },
+  "駄目": {
+    "pairs": [["だ", "駄"], ["め", "目"]],
+    "meaning": "no good",
+    "chapter": "ch04_09"
+  },
+  "夜": {
+    "pairs": [["よる", "夜"]],
+    "meaning": "evening",
+    "chapter": "ch04_09"
+  },
+  "遅い": {
+    "pairs": [["おそ", "遅"], ["", "い"]],
+    "meaning": "late  (i-adj)",
+    "chapter": "ch04_09"
+  },
+  "電話": {
+    "pairs": [["でん", "電"], ["わ", "話"]],
+    "meaning": "phone",
+    "chapter": "ch04_09"
+  },
+  "構う": {
+    "pairs": [["かま", "構"], ["", "う"]],
+    "meaning": "to mind; to be concerned about  (u-verb)",
+    "chapter": "ch04_09"
+  },
+  "温泉": {
+    "pairs": [["おん", "温"], ["せん", "泉"]],
+    "meaning": "hotspring",
+    "chapter": "ch04_10"
+  },
+  "ケーキ": {
+    "pairs": [["", "ケ"], ["", "ー"], ["", "キ"]],
+    "meaning": "cake",
+    "chapter": "ch04_10"
+  },
+  "一緒": {
+    "pairs": [["いっ", "一"], ["しょ", "緒"]],
+    "meaning": "together",
+    "chapter": "ch04_10"
+  },
+  "縫いぐるみ": {
+    "pairs": [["ぬ", "縫"], ["", "い"], ["", "ぐ"], ["", "る"], ["", "み"]],
+    "meaning": "stuffed doll",
+    "chapter": "ch04_10"
+  },
+  "全部": {
+    "pairs": [["ぜん", "全"], ["ぶ", "部"]],
+    "meaning": "everything",
+    "chapter": "ch04_10"
+  },
+  "テーマパーク": {
+    "pairs": [["", "テ"], ["", "ー"], ["", "マ"], ["", "パ"], ["", "ー"], ["", "ク"]],
+    "meaning": "theme park",
+    "chapter": "ch04_10"
+  },
+  "カレー": {
+    "pairs": [["", "カ"], ["", "レ"], ["", "ー"]],
+    "meaning": "curry",
+    "chapter": "ch04_10"
+  },
+  "たまに": {
+    "pairs": [["", "た"], ["", "ま"], ["", "に"]],
+    "meaning": "once in a while",
+    "chapter": "ch04_10"
   }
 }

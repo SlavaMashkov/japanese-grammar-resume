@@ -60,6 +60,8 @@ japanese_grammar_resume/           — Python package
       ch04_06_potential_form.py
       ch04_07_ni_naru_suru.py
       ch04_08_conditionals.py
+      ch04_09_must.py
+      ch04_10_desire_suggestions.py
 ```
 
 ## Running
