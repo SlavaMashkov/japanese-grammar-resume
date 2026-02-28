@@ -1418,5 +1418,280 @@
     "pairs": [["", "や"], ["", "め"], ["", "る"]],
     "meaning": "to stop; to quit  (ru-verb)",
     "chapter": "ch04_05"
+  },
+  "出来る": {
+    "pairs": [["で", "出"], ["き", "来"], ["", "る"]],
+    "meaning": "to be able to do  (ru-verb)",
+    "chapter": "ch04_06"
+  },
+  "信じる": {
+    "pairs": [["しん", "信"], ["", "じ"], ["", "る"]],
+    "meaning": "to believe  (ru-verb)",
+    "chapter": "ch04_06"
+  },
+  "掛ける": {
+    "pairs": [["か", "掛"], ["", "け"], ["", "る"]],
+    "meaning": "to hang  (ru-verb)",
+    "chapter": "ch04_06"
+  },
+  "調べる": {
+    "pairs": [["しら", "調"], ["", "べ"], ["", "る"]],
+    "meaning": "to investigate  (ru-verb)",
+    "chapter": "ch04_06"
+  },
+  "取る": {
+    "pairs": [["と", "取"], ["", "る"]],
+    "meaning": "to take  (u-verb)",
+    "chapter": "ch04_06"
+  },
+  "漢字": {
+    "pairs": [["かん", "漢"], ["じ", "字"]],
+    "meaning": "Kanji",
+    "chapter": "ch04_06"
+  },
+  "残念": {
+    "pairs": [["ざん", "残"], ["ねん", "念"]],
+    "meaning": "unfortunate  (na-adj)",
+    "chapter": "ch04_06"
+  },
+  "富士山": {
+    "pairs": [["ふ", "富"], ["じ", "士"], ["さん", "山"]],
+    "meaning": "Mt. Fuji",
+    "chapter": "ch04_06"
+  },
+  "登る": {
+    "pairs": [["のぼ", "登"], ["", "る"]],
+    "meaning": "to climb  (u-verb)",
+    "chapter": "ch04_06"
+  },
+  "重い": {
+    "pairs": [["おも", "重"], ["", "い"]],
+    "meaning": "heavy  (i-adj)",
+    "chapter": "ch04_06"
+  },
+  "荷物": {
+    "pairs": [["に", "荷"], ["もつ", "物"]],
+    "meaning": "baggage",
+    "chapter": "ch04_06"
+  },
+  "見える": {
+    "pairs": [["み", "見"], ["", "え"], ["", "る"]],
+    "meaning": "to be visible  (ru-verb)",
+    "chapter": "ch04_06"
+  },
+  "聞こえる": {
+    "pairs": [["き", "聞"], ["", "こ"], ["", "え"], ["", "る"]],
+    "meaning": "to be audible  (ru-verb)",
+    "chapter": "ch04_06"
+  },
+  "晴れる": {
+    "pairs": [["は", "晴"], ["", "れ"], ["", "る"]],
+    "meaning": "to be sunny  (ru-verb)",
+    "chapter": "ch04_06"
+  },
+  "おかげ": {
+    "pairs": [["", "お"], ["", "か"], ["", "げ"]],
+    "meaning": "thanks to",
+    "chapter": "ch04_06"
+  },
+  "ただ": {
+    "pairs": [["", "た"], ["", "だ"]],
+    "meaning": "free of charge; only",
+    "chapter": "ch04_06"
+  },
+  "久しぶり": {
+    "pairs": [["ひさ", "久"], ["", "し"], ["", "ぶ"], ["", "り"]],
+    "meaning": "after a long time",
+    "chapter": "ch04_06"
+  },
+  "周り": {
+    "pairs": [["まわ", "周"], ["", "り"]],
+    "meaning": "surroundings",
+    "chapter": "ch04_06"
+  },
+  "うるさい": {
+    "pairs": [["", "う"], ["", "る"], ["", "さ"], ["", "い"]],
+    "meaning": "noisy  (i-adj)",
+    "chapter": "ch04_06"
+  },
+  "有り得る": {
+    "pairs": [["あ", "有"], ["", "り"], ["え", "得"], ["", "る"]],
+    "meaning": "to possibly exist  (ru-verb)",
+    "chapter": "ch04_06"
+  },
+  "寝坊": {
+    "pairs": [["ね", "寝"], ["ぼう", "坊"]],
+    "meaning": "oversleep",
+    "chapter": "ch04_06"
+  },
+  "それ": {
+    "pairs": [["", "そ"], ["", "れ"]],
+    "meaning": "that",
+    "chapter": "ch04_06"
+  },
+  "上手": {
+    "pairs": [["じょう", "上"], ["ず", "手"]],
+    "meaning": "skillful  (na-adj)",
+    "chapter": "ch04_07"
+  },
+  "有名": {
+    "pairs": [["ゆう", "有"], ["めい", "名"]],
+    "meaning": "famous  (na-adj)",
+    "chapter": "ch04_07"
+  },
+  "ハンバーガー": {
+    "pairs": [["", "ハ"], ["", "ン"], ["", "バ"], ["", "ー"], ["", "ガ"], ["", "ー"]],
+    "meaning": "hamburger",
+    "chapter": "ch04_07"
+  },
+  "サラダ": {
+    "pairs": [["", "サ"], ["", "ラ"], ["", "ダ"]],
+    "meaning": "salad",
+    "chapter": "ch04_07"
+  },
+  "他": {
+    "pairs": [["ほか", "他"]],
+    "meaning": "other",
+    "chapter": "ch04_07"
+  },
+  "やはり": {
+    "pairs": [["", "や"], ["", "は"], ["", "り"]],
+    "meaning": "as I thought (also やっぱり)",
+    "chapter": "ch04_07"
+  },
+  "これ": {
+    "pairs": [["", "こ"], ["", "れ"]],
+    "meaning": "this",
+    "chapter": "ch04_07"
+  },
+  "去年": {
+    "pairs": [["きょ", "去"], ["ねん", "年"]],
+    "meaning": "last year",
+    "chapter": "ch04_07"
+  },
+  "背": {
+    "pairs": [["せ", "背"]],
+    "meaning": "height",
+    "chapter": "ch04_07"
+  },
+  "強い": {
+    "pairs": [["つよ", "強"], ["", "い"]],
+    "meaning": "strong  (i-adj)",
+    "chapter": "ch04_07"
+  },
+  "頭": {
+    "pairs": [["あたま", "頭"]],
+    "meaning": "head",
+    "chapter": "ch04_07"
+  },
+  "海外": {
+    "pairs": [["かい", "海"], ["がい", "外"]],
+    "meaning": "overseas",
+    "chapter": "ch04_07"
+  },
+  "寿司": {
+    "pairs": [["すし", "寿司"]],
+    "meaning": "sushi",
+    "chapter": "ch04_07"
+  },
+  "一年間": {
+    "pairs": [["いち", "一"], ["ねん", "年"], ["かん", "間"]],
+    "meaning": "span of 1 year",
+    "chapter": "ch04_07"
+  },
+  "練習": {
+    "pairs": [["れん", "練"], ["しゅう", "習"]],
+    "meaning": "practice",
+    "chapter": "ch04_07"
+  },
+  "ピアノ": {
+    "pairs": [["", "ピ"], ["", "ア"], ["", "ノ"]],
+    "meaning": "piano",
+    "chapter": "ch04_07"
+  },
+  "弾く": {
+    "pairs": [["ひ", "弾"], ["", "く"]],
+    "meaning": "to play (piano, guitar)  (u-verb)",
+    "chapter": "ch04_07"
+  },
+  "地下": {
+    "pairs": [["ち", "地"], ["か", "下"]],
+    "meaning": "underground",
+    "chapter": "ch04_07"
+  },
+  "ボール": {
+    "pairs": [["", "ボ"], ["", "ー"], ["", "ル"]],
+    "meaning": "ball",
+    "chapter": "ch04_08"
+  },
+  "暗い": {
+    "pairs": [["くら", "暗"], ["", "い"]],
+    "meaning": "dark  (i-adj)",
+    "chapter": "ch04_08"
+  },
+  "太る": {
+    "pairs": [["ふと", "太"], ["", "る"]],
+    "meaning": "to become fatter  (u-verb)",
+    "chapter": "ch04_08"
+  },
+  "きっと": {
+    "pairs": [["", "き"], ["", "っ"], ["", "と"]],
+    "meaning": "for sure",
+    "chapter": "ch04_08"
+  },
+  "問題": {
+    "pairs": [["もん", "問"], ["だい", "題"]],
+    "meaning": "problem",
+    "chapter": "ch04_08"
+  },
+  "あそこ": {
+    "pairs": [["", "あ"], ["", "そ"], ["", "こ"]],
+    "meaning": "over there",
+    "chapter": "ch04_08"
+  },
+  "おかしい": {
+    "pairs": [["", "お"], ["", "か"], ["", "し"], ["", "い"]],
+    "meaning": "funny  (i-adj)",
+    "chapter": "ch04_08"
+  },
+  "楽しい": {
+    "pairs": [["たの", "楽"], ["", "し"], ["", "い"]],
+    "meaning": "fun  (i-adj)",
+    "chapter": "ch04_08"
+  },
+  "病気": {
+    "pairs": [["びょう", "病"], ["き", "気"]],
+    "meaning": "disease; sickness",
+    "chapter": "ch04_08"
+  },
+  "自動": {
+    "pairs": [["じ", "自"], ["どう", "動"]],
+    "meaning": "automatic",
+    "chapter": "ch04_08"
+  },
+  "割引": {
+    "pairs": [["わり", "割"], ["びき", "引"]],
+    "meaning": "discount",
+    "chapter": "ch04_08"
+  },
+  "家": {
+    "pairs": [["うち", "家"]],
+    "meaning": "one's own home; house",
+    "chapter": "ch04_08"
+  },
+  "アメリカ": {
+    "pairs": [["", "ア"], ["", "メ"], ["", "リ"], ["", "カ"]],
+    "meaning": "America",
+    "chapter": "ch04_08"
+  },
+  "もし": {
+    "pairs": [["", "も"], ["", "し"]],
+    "meaning": "if by any chance",
+    "chapter": "ch04_08"
+  },
+  "観る": {
+    "pairs": [["み", "観"], ["", "る"]],
+    "meaning": "to watch  (ru-verb)",
+    "chapter": "ch04_08"
   }
 }

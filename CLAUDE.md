@@ -57,6 +57,9 @@ japanese_grammar_resume/           — Python package
       ch04_03_question_marker.py
       ch04_04_compound_sentences.py
       ch04_05_other_te_form.py
+      ch04_06_potential_form.py
+      ch04_07_ni_naru_suru.py
+      ch04_08_conditionals.py
 ```
 
 ## Running
