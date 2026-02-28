@@ -60,8 +60,8 @@ def S(name, **kw):
 
 title_s = S("title", fontSize=14, textColor=CK, spaceAfter=2 * mm, leading=18, fontName="DV-B")
 section_s = S("sec", fontSize=8, textColor=CW, leading=10, fontName="DV-B")
-note_s = S("note", fontSize=8, leading=11.5, leftIndent=3 * mm, textColor=CD)
-ex_s = S("example", fontName="DV", fontSize=8, textColor=CD, leftIndent=8 * mm, leading=11.5)
+note_s = S("note", fontName="DV", fontSize=8, leading=11.5, leftIndent=3 * mm, textColor=CD, spaceBefore=1.5)
+ex_s = S("example", fontName="DV", fontSize=8, textColor=CD, leftIndent=8 * mm, leading=11.5, spaceBefore=1.5)
 
 
 def cell(text, bold=False, sz=8.5, col=CK, center=False):
