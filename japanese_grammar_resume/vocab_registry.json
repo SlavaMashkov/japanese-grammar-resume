@@ -1758,5 +1758,445 @@
     "pairs": [["", "た"], ["", "ま"], ["", "に"]],
     "meaning": "once in a while",
     "chapter": "ch04_10"
+  },
+  "叫ぶ": {
+    "pairs": [["さけ", "叫"], ["", "ぶ"]],
+    "meaning": "to scream  (u-verb)",
+    "chapter": "ch04_11"
+  },
+  "呼ぶ": {
+    "pairs": [["よ", "呼"], ["", "ぶ"]],
+    "meaning": "to call  (u-verb)",
+    "chapter": "ch04_11"
+  },
+  "呟く": {
+    "pairs": [["つぶや", "呟"], ["", "く"]],
+    "meaning": "to mutter  (u-verb)",
+    "chapter": "ch04_11"
+  },
+  "寒い": {
+    "pairs": [["さむ", "寒"], ["", "い"]],
+    "meaning": "cold  (i-adj)",
+    "chapter": "ch04_11"
+  },
+  "高校生": {
+    "pairs": [["こう", "高"], ["こう", "校"], ["せい", "生"]],
+    "meaning": "high school student",
+    "chapter": "ch04_11"
+  },
+  "智子": {
+    "pairs": [["とも", "智"], ["こ", "子"]],
+    "meaning": "Tomoko (first name)",
+    "chapter": "ch04_11"
+  },
+  "すごい": {
+    "pairs": [["", "す"], ["", "ご"], ["", "い"]],
+    "meaning": "to a great extent  (i-adj)",
+    "chapter": "ch04_11"
+  },
+  "英語": {
+    "pairs": [["えい", "英"], ["ご", "語"]],
+    "meaning": "English (language)",
+    "chapter": "ch04_12"
+  },
+  "意味": {
+    "pairs": [["い", "意"], ["み", "味"]],
+    "meaning": "meaning",
+    "chapter": "ch04_12"
+  },
+  "鯛": {
+    "pairs": [["たい", "鯛"]],
+    "meaning": "tai (type of fish)",
+    "chapter": "ch04_12"
+  },
+  "主人公": {
+    "pairs": [["しゅ", "主"], ["じん", "人"], ["こう", "公"]],
+    "meaning": "main character",
+    "chapter": "ch04_12"
+  },
+  "日本人": {
+    "pairs": [["に", "日"], ["ほん", "本"], ["じん", "人"]],
+    "meaning": "Japanese person",
+    "chapter": "ch04_12"
+  },
+  "お酒": {
+    "pairs": [["お", "お"], ["さけ", "酒"]],
+    "meaning": "alcohol",
+    "chapter": "ch04_12"
+  },
+  "弱い": {
+    "pairs": [["よわ", "弱"], ["", "い"]],
+    "meaning": "weak  (i-adj)",
+    "chapter": "ch04_12"
+  },
+  "独身": {
+    "pairs": [["どく", "独"], ["しん", "身"]],
+    "meaning": "single; unmarried",
+    "chapter": "ch04_12"
+  },
+  "嘘": {
+    "pairs": [["うそ", "嘘"]],
+    "meaning": "lie",
+    "chapter": "ch04_12"
+  },
+  "パソコン": {
+    "pairs": [["", "パ"], ["", "ソ"], ["", "コ"], ["", "ン"]],
+    "meaning": "computer; PC",
+    "chapter": "ch04_12"
+  },
+  "再起動": {
+    "pairs": [["さい", "再"], ["き", "起"], ["どう", "動"]],
+    "meaning": "reboot",
+    "chapter": "ch04_12"
+  },
+  "困る": {
+    "pairs": [["こま", "困"], ["", "る"]],
+    "meaning": "to be bothered; troubled  (u-verb)",
+    "chapter": "ch04_12"
+  },
+  "結婚": {
+    "pairs": [["けっ", "結"], ["こん", "婚"]],
+    "meaning": "marriage",
+    "chapter": "ch04_12"
+  },
+  "幸せ": {
+    "pairs": [["しあわ", "幸"], ["", "せ"]],
+    "meaning": "happiness",
+    "chapter": "ch04_12"
+  },
+  "多分": {
+    "pairs": [["た", "多"], ["ぶん", "分"]],
+    "meaning": "maybe",
+    "chapter": "ch04_12"
+  },
+  "別れる": {
+    "pairs": [["わか", "別"], ["", "れ"], ["", "る"]],
+    "meaning": "to separate; to break up  (ru-verb)",
+    "chapter": "ch04_12"
+  },
+  "彼氏": {
+    "pairs": [["かれ", "彼"], ["し", "氏"]],
+    "meaning": "boyfriend",
+    "chapter": "ch04_12"
+  },
+  "留学": {
+    "pairs": [["りゅう", "留"], ["がく", "学"]],
+    "meaning": "study abroad",
+    "chapter": "ch04_12"
+  },
+  "切る": {
+    "pairs": [["き", "切"], ["", "る"]],
+    "meaning": "to cut  (u-verb)",
+    "chapter": "ch04_13"
+  },
+  "お好み焼き": {
+    "pairs": [["お", "お"], ["この", "好"], ["", "み"], ["や", "焼"], ["", "き"]],
+    "meaning": "okonomiyaki (Japanese-style pancake)",
+    "chapter": "ch04_13"
+  },
+  "初めて": {
+    "pairs": [["はじ", "初"], ["", "め"], ["", "て"]],
+    "meaning": "for the first time",
+    "chapter": "ch04_13"
+  },
+  "眠い": {
+    "pairs": [["ねむ", "眠"], ["", "い"]],
+    "meaning": "sleepy  (i-adj)",
+    "chapter": "ch04_13"
+  },
+  "広島": {
+    "pairs": [["ひろ", "広"], ["しま", "島"]],
+    "meaning": "Hiroshima",
+    "chapter": "ch04_13"
+  },
+  "避ける": {
+    "pairs": [["さ", "避"], ["", "け"], ["", "る"]],
+    "meaning": "to avoid  (ru-verb)",
+    "chapter": "ch04_13"
+  },
+  "無理矢理": {
+    "pairs": [["む", "無"], ["り", "理"], ["や", "矢"], ["り", "理"]],
+    "meaning": "forcibly",
+    "chapter": "ch04_13"
+  },
+  "徹夜": {
+    "pairs": [["てつ", "徹"], ["や", "夜"]],
+    "meaning": "staying up all night",
+    "chapter": "ch04_13"
+  },
+  "止める": {
+    "pairs": [["と", "止"], ["", "め"], ["", "る"]],
+    "meaning": "to stop  (ru-verb)",
+    "chapter": "ch04_13"
+  },
+  "なるべく": {
+    "pairs": [["", "な"], ["", "る"], ["", "べ"], ["", "く"]],
+    "meaning": "as much as possible",
+    "chapter": "ch04_13"
+  },
+  "ジム": {
+    "pairs": [["", "ジ"], ["", "ム"]],
+    "meaning": "gym",
+    "chapter": "ch04_13"
+  },
+  "決める": {
+    "pairs": [["き", "決"], ["", "め"], ["", "る"]],
+    "meaning": "to decide  (ru-verb)",
+    "chapter": "ch04_13"
+  },
+  "お歳暮": {
+    "pairs": [["お", "お"], ["せい", "歳"], ["ぼ", "暮"]],
+    "meaning": "year-end presents",
+    "chapter": "ch04_14"
+  },
+  "お中元": {
+    "pairs": [["お", "お"], ["ちゅう", "中"], ["げん", "元"]],
+    "meaning": "Bon festival gifts",
+    "chapter": "ch04_14"
+  },
+  "もらう": {
+    "pairs": [["", "も"], ["", "ら"], ["", "う"]],
+    "meaning": "to receive  (u-verb)",
+    "chapter": "ch04_14"
+  },
+  "車": {
+    "pairs": [["くるま", "車"]],
+    "meaning": "car",
+    "chapter": "ch04_14"
+  },
+  "代わり": {
+    "pairs": [["か", "代"], ["", "わ"], ["", "り"]],
+    "meaning": "substitute",
+    "chapter": "ch04_14"
+  },
+  "餌": {
+    "pairs": [["えさ", "餌"]],
+    "meaning": "food for animals",
+    "chapter": "ch04_14"
+  },
+  "チェック": {
+    "pairs": [["", "チ"], ["", "ェ"], ["", "ッ"], ["", "ク"]],
+    "meaning": "check",
+    "chapter": "ch04_14"
+  },
+  "無理": {
+    "pairs": [["む", "無"], ["り", "理"]],
+    "meaning": "impossible",
+    "chapter": "ch04_14"
+  },
+  "時計": {
+    "pairs": [["と", "時"], ["けい", "計"]],
+    "meaning": "watch; clock",
+    "chapter": "ch04_14"
+  },
+  "千円": {
+    "pairs": [["せん", "千"], ["えん", "円"]],
+    "meaning": "1,000 yen",
+    "chapter": "ch04_14"
+  },
+  "あなた": {
+    "pairs": [["", "あ"], ["", "な"], ["", "た"]],
+    "meaning": "you",
+    "chapter": "ch04_14"
+  },
+  "消しゴム": {
+    "pairs": [["け", "消"], ["", "し"], ["", "ゴ"], ["", "ム"]],
+    "meaning": "eraser",
+    "chapter": "ch04_15"
+  },
+  "遠い": {
+    "pairs": [["とお", "遠"], ["", "い"]],
+    "meaning": "far  (i-adj)",
+    "chapter": "ch04_15"
+  },
+  "壊れる": {
+    "pairs": [["こわ", "壊"], ["", "れ"], ["", "る"]],
+    "meaning": "to break  (ru-verb)",
+    "chapter": "ch04_15"
+  },
+  "頂戴": {
+    "pairs": [["ちょう", "頂"], ["だい", "戴"]],
+    "meaning": "receiving (humble)",
+    "chapter": "ch04_15"
+  },
+  "致す": {
+    "pairs": [["いた", "致"], ["", "す"]],
+    "meaning": "to do (humble)  (u-verb)",
+    "chapter": "ch04_15"
+  },
+  "スプーン": {
+    "pairs": [["", "ス"], ["", "プ"], ["", "ー"], ["", "ン"]],
+    "meaning": "spoon",
+    "chapter": "ch04_15"
+  },
+  "座る": {
+    "pairs": [["すわ", "座"], ["", "る"]],
+    "meaning": "to sit  (u-verb)",
+    "chapter": "ch04_15"
+  },
+  "あっち": {
+    "pairs": [["", "あ"], ["", "っ"], ["", "ち"]],
+    "meaning": "that way (over there)",
+    "chapter": "ch04_15"
+  },
+  "酒": {
+    "pairs": [["さけ", "酒"]],
+    "meaning": "alcohol",
+    "chapter": "ch04_15"
+  },
+  "変": {
+    "pairs": [["へん", "変"]],
+    "meaning": "strange  (na-adj)",
+    "chapter": "ch04_15"
+  },
+  "零": {
+    "pairs": [["れい", "零"]],
+    "meaning": "zero",
+    "chapter": "ch04_16"
+  },
+  "点": {
+    "pairs": [["てん", "点"]],
+    "meaning": "period; decimal point",
+    "chapter": "ch04_16"
+  },
+  "マイナス": {
+    "pairs": [["", "マ"], ["", "イ"], ["", "ナ"], ["", "ス"]],
+    "meaning": "minus",
+    "chapter": "ch04_16"
+  },
+  "平成": {
+    "pairs": [["へい", "平"], ["せい", "成"]],
+    "meaning": "Heisei era",
+    "chapter": "ch04_16"
+  },
+  "昭和": {
+    "pairs": [["しょう", "昭"], ["わ", "和"]],
+    "meaning": "Showa era",
+    "chapter": "ch04_16"
+  },
+  "午前": {
+    "pairs": [["ご", "午"], ["ぜん", "前"]],
+    "meaning": "AM; morning",
+    "chapter": "ch04_16"
+  },
+  "午後": {
+    "pairs": [["ご", "午"], ["ご", "後"]],
+    "meaning": "PM; afternoon",
+    "chapter": "ch04_16"
+  },
+  "秒": {
+    "pairs": [["びょう", "秒"]],
+    "meaning": "second (time)",
+    "chapter": "ch04_16"
+  },
+  "枚": {
+    "pairs": [["まい", "枚"]],
+    "meaning": "counter for flat objects",
+    "chapter": "ch04_16"
+  },
+  "冊": {
+    "pairs": [["さつ", "冊"]],
+    "meaning": "counter for bound objects",
+    "chapter": "ch04_16"
+  },
+  "つまらない": {
+    "pairs": [["", "つ"], ["", "ま"], ["", "ら"], ["", "な"], ["", "い"]],
+    "meaning": "boring  (i-adj)",
+    "chapter": "ch04_17"
+  },
+  "まったく": {
+    "pairs": [["", "ま"], ["", "っ"], ["", "た"], ["", "く"]],
+    "meaning": "entirely; good grief",
+    "chapter": "ch04_17"
+  },
+  "サラリーマン": {
+    "pairs": [["", "サ"], ["", "ラ"], ["", "リ"], ["", "ー"], ["", "マ"], ["", "ン"]],
+    "meaning": "office worker (salaryman)",
+    "chapter": "ch04_17"
+  },
+  "残業": {
+    "pairs": [["ざん", "残"], ["ぎょう", "業"]],
+    "meaning": "overtime",
+    "chapter": "ch04_17"
+  },
+  "風呂": {
+    "pairs": [["ふ", "風"], ["ろ", "呂"]],
+    "meaning": "bath",
+    "chapter": "ch04_17"
+  },
+  "超": {
+    "pairs": [["ちょう", "超"]],
+    "meaning": "super; extremely",
+    "chapter": "ch04_17"
+  },
+  "奴": {
+    "pairs": [["やつ", "奴"]],
+    "meaning": "guy (derogatory)",
+    "chapter": "ch04_17"
+  },
+  "負ける": {
+    "pairs": [["ま", "負"], ["", "け"], ["", "る"]],
+    "meaning": "to lose  (ru-verb)",
+    "chapter": "ch04_17"
+  },
+  "近い": {
+    "pairs": [["ちか", "近"], ["", "い"]],
+    "meaning": "close; near  (i-adj)",
+    "chapter": "ch04_17"
+  },
+  "隣": {
+    "pairs": [["となり", "隣"]],
+    "meaning": "next to; neighboring",
+    "chapter": "ch04_17"
+  },
+  "込む": {
+    "pairs": [["こ", "込"], ["", "む"]],
+    "meaning": "to become crowded  (u-verb)",
+    "chapter": "ch04_18"
+  },
+  "一体": {
+    "pairs": [["いっ", "一"], ["たい", "体"]],
+    "meaning": "forms emphatic question (\"why on earth?\")",
+    "chapter": "ch04_18"
+  },
+  "何時": {
+    "pairs": [["なん", "何"], ["じ", "時"]],
+    "meaning": "what time",
+    "chapter": "ch04_18"
+  },
+  "つもり": {
+    "pairs": [["", "つ"], ["", "も"], ["", "り"]],
+    "meaning": "intention; plan",
+    "chapter": "ch04_18"
+  },
+  "土曜日": {
+    "pairs": [["ど", "土"], ["よう", "曜"], ["び", "日"]],
+    "meaning": "Saturday",
+    "chapter": "ch04_18"
+  },
+  "終わり": {
+    "pairs": [["お", "終"], ["", "わ"], ["", "り"]],
+    "meaning": "end",
+    "chapter": "ch04_18"
+  },
+  "覚える": {
+    "pairs": [["おぼ", "覚"], ["", "え"], ["", "る"]],
+    "meaning": "to memorize  (ru-verb)",
+    "chapter": "ch04_18"
+  },
+  "間違える": {
+    "pairs": [["ま", "間"], ["ちが", "違"], ["", "え"], ["", "る"]],
+    "meaning": "to make a mistake  (ru-verb)",
+    "chapter": "ch04_18"
+  },
+  "表現": {
+    "pairs": [["ひょう", "表"], ["げん", "現"]],
+    "meaning": "expression",
+    "chapter": "ch04_18"
+  },
+  "来週": {
+    "pairs": [["らい", "来"], ["しゅう", "週"]],
+    "meaning": "next week",
+    "chapter": "ch04_18"
   }
 }

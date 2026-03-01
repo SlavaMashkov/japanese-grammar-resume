@@ -62,6 +62,14 @@ japanese_grammar_resume/           — Python package
       ch04_08_conditionals.py
       ch04_09_must.py
       ch04_10_desire_suggestions.py
+      ch04_11_quoted_clauses.py
+      ch04_12_defining_describing.py
+      ch04_13_try_attempt.py
+      ch04_14_giving_receiving.py
+      ch04_15_making_requests.py
+      ch04_16_numbers_counting.py
+      ch04_17_casual_slang.py
+      ch04_18_sentence_ending_particles.py
 ```
 
 ## Running
